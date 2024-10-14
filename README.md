@@ -4,7 +4,10 @@
 
 qCalc delves into numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. I initially considered numbers as direct representations of consciousness in a Pythagorean sense, however my work now suggests consciousness emerges from a quantum mechanical informational substrate with numbers as its underpinning — akin to bits in binary systems. This quaternary system utilizes digits 0 through 9, pairing 1 with 8, 2 with 7, 3 with 6, and 4 with 5.
 
-In a symbolic echo of Daoist thought, where "the one becomes the three, which becomes the 10,000 things," the numbers 1, 2, and 5 represent primordial concepts of subject, object, and boundary. Here, 0 is viewed as the ineffable precursor to unity and differentiation, while 9 echoes this primordial precursor to unity.
+In a symbolic echo of Daoist thought, where "the one becomes the three, which becomes the 10,000 things," the numbers 1, 2, and 5 represent primordial concepts of subject, object, and boundary. These numbers underpin the dynamic processes of contraction and expansion within the numeric framework:
+   - **Expansion**: The influence of Phi (\(\phi = \frac{1 + 5^{1/2}}{2}\)) symbolizes systemic expansion, resonating with the growth and outward forces in numeric and cosmic patterns.
+   - **Contraction**: Conversely, the contraction is represented by the reciprocal of Phi (\(1/\phi = \frac{1 - 5^{1/2}}{2}\)), embodying the inward forces that stabilize and counterbalance expansion, ensuring systemic balance. 
+0 is viewed as the ineffable precursor to unity and differentiation, while 9 and its entire radial family echoes the energy that came before infinity decencended to manisfestion; which is to say before "the simulation" was activated.
 
 qCalc posits that integers themselves are an illusion of distinct particles, and true comprehension of the quantum field arises through analyzing the number of parts within the whole — represented by the universal consideration set, U. Each integer is perceived as its own universe, consisting of U number of parts, and the project explores the underlying polar structures contained within. The focus extends to understanding how these forces and forms dynamically evolve as U expands and contracts, akin to cymatic patterns in audio oscillations, albeit fundamentally more intrinsic to reality's construction.
 
@@ -22,12 +25,10 @@ qCalc introduces a novel framework for determining the primality of integers. In
 
 The criteria for primality within qCalc's framework include:
 
-1. **Primordial Numbers**: Numbers 1, 2, and 5 are recognized as primordial and foundational. Though 1 and 2 do not meet the criteria for primality, they, along with 5, represent basic constructs at the system's lowest level. These numbers underpin the dynamic processes of contraction and expansion within the numeric framework:
-   - **Expansion**: The influence of Phi (\(\phi = \frac{1 + 5^{1/2}}{2}\)) symbolizes systemic expansion, resonating with the growth and outward forces in numeric and cosmic patterns.
-   - **Contraction**: Conversely, the contraction is represented by the reciprocal of Phi (\(1/\phi = \frac{1 - 5^{1/2}}{2}\)), embodying the inward forces that stabilize and counterbalance expansion, ensuring systemic balance.
+1. **Primordial Numbers**: Numbers 1, 2, and 5 are recognized as primordial and foundational. Though 1 and 2 do not meet the criteria for primality, they, along with 5, represent basic constructs at the system's lowest level.
 2. **Radial Check**: An integer is excluded from being considered prime if its modulo 9 equals 0, 3, or 6, aligning its placement within recognized geometric symmetries and axial alignments.
 3. **Even Number Rule**: Even numbers are non-prime due to inherent divisional symmetry, consistent with established mathematical properties and polar dynamics.
-4. **Fractional Cycle Check**: For integers greater than 5, fractional constructs from 1/n to (n-1)/2/n must achieve sums of 9 or 0 within repeating decimal sequences. This qualitative outcome is confirmed through detailed algorithmic analysis, reflecting a stabilizing equilibrium akin to physical systems, thus rendering them non-interactive with other integers.
+4. **Closed Cycle Sequence Analysis**: For U values outside of the primoridal 1, 2, and 5, fractional constructs from 1/n to (n-1)/2/n must achieve sums of 9 (or 0) within their closed-cycle repeating sequences.
 
 This framework suggests that numbers embody cosmic symmetries and mathematical structures integral to quantum mechanics principles. By considering numeric patterns as integral parts of the universe's deeper informational substrate, qCalc aspires to integrate these theoretical insights seamlessly with empirical exploration, welcoming rigorous scrutiny and engagement across scientific disciplines.
 
