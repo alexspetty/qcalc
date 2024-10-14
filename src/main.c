@@ -68,29 +68,21 @@ void print_field_str_no_color(const char *n_str) {
 }
 
 int main(int argc, char *argv[]) {
-    // Check for color switch
-    for (int i = 1; i < argc; i++) {
-        if (strcmp(argv[i], "colorfield") == 0) {
-            color_enabled = 1;
-        }
-    }
-
-    // action must be specified
+    // Action must be specified
     if (argc < 2) {
         printf("ERROR: Specify an action with its parameters!\n");
         print_help_message();
         return 1;
     }
 
-    // Example usage with colorfield
-    if (strcmp(argv[1], "colorfield") == 0 && argc >= 3 && int_str(argv[2]) != 0) {
-        print_field_str_color(argv[2]);
-        return 0;
-    }
-
-    // Example usage with field
+    // Example usage with field and color option
     if (strcmp(argv[1], "field") == 0 && argc >= 3 && int_str(argv[2]) != 0) {
-        print_field_str_no_color(argv[2]);
+        if (argc >= 4 && strcmp(argv[3], "color") == 0) {
+            color_enabled = 1;
+            print_field_str_color(argv[2]);
+        } else {
+            print_field_str_no_color(argv[2]);
+        }
         return 0;
     }
 

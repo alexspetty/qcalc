@@ -40,8 +40,7 @@ void print_help_message() {
     printf("Commands:\n");
     printf("  help                      Display this help message\n");
     printf("  copyright                 Display copyright information\n");
-    printf("  field INTEGER             Display numeric field values up to a given integer\n");
-    printf("  colorfield INTEGER        Display numeric field with color coding to represent polarity\n");
+    printf("  field INTEGER [color]     Display numeric field values up to a given integer; add 'color' to enable color coding\n");
     printf("  div INTEGER INTEGER       Perform division and identify repeating decimals\n");
     printf("  rec INTEGER               Display reciprocal representation\n");
     printf("  fc INTEGER                Display foundational coordinates of an integer\n");
