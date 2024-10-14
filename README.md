@@ -10,6 +10,12 @@ qCalc posits that integers themselves are an illusion of distinct particles, and
 
 In nature, all things seen and unseen, the intricate processes reflect optimized methods of encoding and transmitting information, exemplified by DNA and RNA. The quaternary makeup of DNA, through Adenosine (A), Thymine (T), Cytosine (C), and Guanine (G), which pair due to polar forces, has inspired qCalc's exploration of a shift from binary to quaternary paradigms. Similarly, qCalc's numeric relationships demonstrate polarity and symmetry, where numbers take on distinct roles — positive, negative, and neutral — reminiscent of DNA's polar interplay. At this foundational stage, qCalc employs color coding to visualize such polarities, offering insights into potential computational interactions possibly underlying reality. It acts as initial steps towards quantum-level simulations, wherein numbers embody characteristics akin to quantum particles, providing a framework for understanding how numeric patterns may influence the construction of reality.
 
+## Contributors
+
+We would like to acknowledge the valuable contributions to the qCalc project:
+
+- **Dario Cangialosi** - Provided the initial implementation especially for closed and open cycle detection and taught me how to utilize the GMP library.
+
 ## New Definition for Primality
 
 qCalc introduces a novel framework for determining the primality of integers. In this system, a prime number is characterized not only by its lack of divisibility but through its neutral numeric polarity, a unique property resonating with the stabilizing constructs 0 and 9 within a broader systemic pattern. This numeric polar neutrality is posited to inherently prevent divisibility by other numbers—rules inherent to the quantum self-organizing systems they comprise—unveiling deeper structural properties shaping our particulate reality.
