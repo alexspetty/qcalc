@@ -34,26 +34,27 @@ This framework suggests that numbers embody cosmic symmetries and mathematical s
 
 ## Features
 
-- **Foundational Coordinates (fc)**: Calculates the foundational coordinates of an integer along a numeric spiral.
-- **Prime Checks**: Supports checking an integer's primality and optionally displays its foundational coordinates.
-- **Division with Decimal Expansion**: Executes and prints divisions, accurately identifying repeating decimal sequences.
-- **Field and Color Field Calculations**: Illustrates the divisions leading up to a given number with polarity-based color representation:
-  - **Neutral (0, 9)**: Depicted in blue, representing neutral computational state.
-  - **Positive Pole (3)**: Highlighted in bold red, symbolizing a source of positive force attraction.
-  - **Negative Pole (6)**: Highlighted in bold black, symbolizing a source of negative force attraction.
-  - **Positive Form (2, 4, 8)**: Shown in lighter red, denoting values drawn to positive force influence.
-  - **Negative Form (1, 5, 7)**: Shown in dark grey, denoting values drawn to negative force influence.
+- **Foundational Coordinates (fc)**: Calculates the foundational coordinates of an integer along a numeric spiral, offering insights into its positional attributes.
+- **Prime Checks**: Verifies if an integer is a prime number based on qCalc's unique criteria, optionally displaying foundational coordinates.
+- **Arbitrary Precision Division**: Executes divisions with high precision offered by GMP, identifying open, closed, and mixed cycle sequences.
+- **Field Calculations**: Illustrates the divisions leading up to a given number with optional color-coding to represent polarity:
+  - **Neutral (0, 9)**: Depicted in blue, representing the neutral computational state.
+  - **Positive Pole (3)**: Highlighted in bold red, indicating positive force attraction.
+  - **Negative Pole (6)**: Highlighted in bold black, indicating negative force attraction.
+  - **Positive Forms (2, 4, 8)**: Shown in lighter red, denoting values drawn to positive influence.
+  - **Negative Forms (1, 5, 7)**: Shown in dark grey, denoting values drawn to negative influence.
 
 ## Usage
 
 Example commands:
-- `qcalc help` - Displays a help message with available commands.
+- `qcalc help` - Displays a help message with available commands and their options.
 - `qcalc copyright` - Prints copyright information.
-- `qcalc field INTEGER` - Displays the numeric field values up to a given integer.
-- `qcalc colorfield INTEGER` - Displays the numeric field with color coding to represent polarity.
-- `qcalc div INTEGER INTEGER` - Performs division and identifies repeating decimals.
-- `qcalc prime INTEGER [check-first|check-full]` - Checks primality based on qCalc's unique rules.
-- `qcalc prime-debug INTEGER [check-first|check-full]` - Debug mode for detailed primality step logs.
+- `qcalc field INTEGER [color]` - Displays the numeric field values up to a given integer; add 'color' to enable color coding.
+- `qcalc div INTEGER INTEGER` - Performs arbitrary precision division, identifying open, closed, and mixed cycle sequences.
+- `qcalc rec INTEGER` - Displays the arbitrary precision reciprocal representation of an integer.
+- `qcalc fc INTEGER` - Calculates and displays the foundational coordinates of an integer.
+- `qcalc prime INTEGER [check-first|check-full]` - Determines the primality based on qCalc's unique rules.
+- `qcalc prime-debug INTEGER [check-first|check-full]` - Debug mode for detailed primality step logs, providing insights into process evaluations.
 
 ## Installation
 
