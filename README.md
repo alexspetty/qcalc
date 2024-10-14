@@ -2,7 +2,7 @@
 
 ## Abstract
 
-qCalc delves into numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. I initially considered nuymbers as direct representations of consciousness in a Pythagorean sense, however my work now suggests consciousness emerges from an informational substrate with numbers as its underpinning — akin to bits in binary systems. This quaternary system utilizes digits 0 through 9, pairing 1 with 8, 2 with 7, 3 with 6, and 4 with 5.
+qCalc delves into numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. I initially considered numbers as direct representations of consciousness in a Pythagorean sense, however my work now suggests consciousness emerges from a quantum mechanical informational substrate with numbers as its underpinning — akin to bits in binary systems. This quaternary system utilizes digits 0 through 9, pairing 1 with 8, 2 with 7, 3 with 6, and 4 with 5.
 
 In a symbolic echo of Daoist thought, where "the one becomes the three, which becomes the 10,000 things," the numbers 1, 2, and 5 represent primordial concepts of subject, object, and boundary. Here, 0 is viewed as the ineffable precursor to unity and differentiation, while 9 echoes this primordial precursor to unity.
 
