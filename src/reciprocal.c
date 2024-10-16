@@ -10,8 +10,11 @@ void print_reciprocal_str(const char *str) {
     mpz_init_set_str(n, str, 10);
     mpz_init_set_ui(d, 1); // Set the denominator as 1 for reciprocal calculation
     
+    // Choose whether you want debug enabled or disabled here - set to 0 or 1
+    int debug_enabled = 0;
+    
     // Use the division print function to display the reciprocal properly
-    mpz_div_print(d, n);
+    mpz_div_print(d, n, debug_enabled);
 
     // Clear the variables
     mpz_clear(n);

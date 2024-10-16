@@ -126,16 +126,16 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
         return 2;
 }
 
-void mpz_div_print(mpz_t n, mpz_t d) {
+void mpz_div_print(mpz_t n, mpz_t d, int debug_enabled) {
     mpz_t q, r, zero;
-    char *a, *p;
+    char *a = NULL, *p = NULL;
     int type;
 
     mpz_init(q);
     mpz_init(r);
     mpz_tdiv_qr(q, r, n, d);
-    
-    // Print the quotient with color (if enabled)
+
+    // Print the quotient value
     int q_value = mpz_get_ui(q);
     print_number_with_color(q_value);
 
@@ -145,52 +145,56 @@ void mpz_div_print(mpz_t n, mpz_t d) {
     if (mpz_cmp(r, zero) != 0) {
         printf(".");
 
-        // Expand proper fraction r/d
+        // Calculate fraction components
         type = mpz_pfraction_str(&a, &p, r, d);
 
-        // Print antiperiod if any
-        if (type != 2) {
+        // Handle terminating decimal or repeating
+        if (type == 0) {
+            // This indicates it's a terminating decimal; print it directly
             for (int i = 0; a[i] != '\0'; i++) {
-                print_number_with_color(a[i] - '0'); // Convert character to integer
+                print_number_with_color(a[i] - '0');
             }
-        }
+        } else if (p != NULL && strlen(p) > 0) {
+            int digit_sum = 0;
 
-        // Print period if any
-        if (type != 0) {
-            printf("|");
+            printf("|"); // Repeat cycle start
             for (int i = 0; p[i] != '\0'; i++) {
-                print_number_with_color(p[i] - '0'); // Convert character to integer
+                print_number_with_color(p[i] - '0');
+                digit_sum += p[i] - '0';
             }
-            printf("|");
+            printf("|"); // Repeat cycle end
+
+            if (debug_enabled) {
+                printf(" %d", reduce_to_single_digit(digit_sum)); // Sum if debug
+            }
+        } else {
+            printf("0");
         }
 
         free(a);
         free(p);
     }
 
-    printf("\n");
+    printf("\n"); // Ensure newline separation for outputs
     mpz_clear(zero);
     mpz_clear(r);
 }
 
-void print_div_str(const char *n_str, const char *d_str)
-{
+void print_div_str(const char *n_str, const char *d_str, int debug_enabled) {
     mpz_t n, d;
     mpz_init_set_str(n, n_str, 10);
     mpz_init_set_str(d, d_str, 10);
-    mpz_div_print(n, d);
+    mpz_div_print(n, d, debug_enabled);
     mpz_clear(n);
     mpz_clear(d);
 }
 
-void print_field_str(const char *n_str)
-{
+void print_field_str(const char *n_str, int debug_enabled) {
     mpz_t n, i;
     mpz_init_set_str(n, n_str, 10);
     mpz_init_set_ui(i, 1);
-    while (mpz_cmp(i, n) != 0)
-    {
-        mpz_div_print(i, n);
+    while (mpz_cmp(i, n) != 0) {
+        mpz_div_print(i, n, debug_enabled);
         mpz_add_ui(i, i, 1);
     }
     mpz_clear(n);

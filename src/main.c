@@ -42,25 +42,24 @@ void print_number_with_color(int value) {
 }
 
 // Modify existing functions to use the new color printing function
-void print_field_str_color(const char *n_str) {
+void print_field_str_color(const char *n_str, int debug_enabled) {
     mpz_t n, i;
     mpz_init_set_str(n, n_str, 10);
     mpz_init_set_ui(i, 1);
     while (mpz_cmp(i, n) <= 0) { // Ensure inclusive up to n
-        mpz_div_print(i, n);
+        mpz_div_print(i, n, debug_enabled);
         mpz_add_ui(i, i, 1);
     }
     mpz_clear(n);
     mpz_clear(i);
 }
 
-// Original print_field function without color
-void print_field_str_no_color(const char *n_str) {
+void print_field_str_no_color(const char *n_str, int debug_enabled) {
     mpz_t n, i;
     mpz_init_set_str(n, n_str, 10);
     mpz_init_set_ui(i, 1);
     while (mpz_cmp(i, n) <= 0) { // Ensure inclusive up to n
-        mpz_div_print(i, n);
+        mpz_div_print(i, n, debug_enabled);
         mpz_add_ui(i, i, 1);
     }
     mpz_clear(n);
@@ -75,13 +74,17 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Example usage with field and color option
+    // Check for field and optional debug or color options
     if (strcmp(argv[1], "field") == 0 && argc >= 3 && int_str(argv[2]) != 0) {
+        int debug_enabled = 0;
+        if (argc >= 4 && strcmp(argv[3], "debug") == 0) {
+            debug_enabled = 1;
+        }
         if (argc >= 4 && strcmp(argv[3], "color") == 0) {
             color_enabled = 1;
-            print_field_str_color(argv[2]);
+            print_field_str_color(argv[2], debug_enabled);
         } else {
-            print_field_str_no_color(argv[2]);
+            print_field_str_no_color(argv[2], debug_enabled);
         }
         return 0;
     }
@@ -127,7 +130,8 @@ int main(int argc, char *argv[]) {
 
     // Handle "div" command
     if (strcmp(argv[1], "div") == 0 && argc >= 4 && int_str(argv[2]) != 0 && int_str(argv[3]) != 0) {
-        print_div_str(argv[2], argv[3]);
+        int debug_enabled = (argc >= 5 && strcmp(argv[4], "debug") == 0) ? 1 : 0;
+        print_div_str(argv[2], argv[3], debug_enabled);
         return 0;
     }
 
