@@ -174,12 +174,12 @@ This section will be updated as new results, experiments, or theoretical advance
 
 ## What qCalc Delivers: Reality, Experiment, and Vision
 
-qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. For clarity, here is what the codebase actually does, and what remains open or speculative:
+qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. For clarity, here is what the codebase actually does, and what remains open or speculative.
 
 ### What the Codebase Delivers
 
 * Polarity and Field Visualization:
-  qCalc computes, color-codes, and visualizes the "polarity" of digits, repeating decimals, and numeric fields. Users can immediately see patterns and symmetries in integer fields and decimal expansions.
+  qCalc computes, color-codes, and visualizes the polarity of digits, repeating decimals, and numeric fields. Users can immediately see patterns and symmetries in integer fields and decimal expansions.
 
 * Alternative Primality Framework:
   qCalc implements a novel definition of primality based on closed cycle behavior and digital root neutrality (digits summing to 0 or 9), which is distinct from classical divisibility-based tests.
@@ -190,7 +190,7 @@ qCalc is both a practical computational tool and a platform for mathematical and
 * Arbitrary Precision and Batch Experimentation:
   Built on GMP, qCalc can compute with very large numbers and run automated tests and field visualizations at scale.
 
-* Exploratory CLI and Test Suite:
+* Exploratory Command-Line Interface and Test Suite:
   The included scripts and command-line interface allow users to run, test, and expand on all core features.
 
 ### What Is Exploratory or Speculative
