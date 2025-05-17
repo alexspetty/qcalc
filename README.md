@@ -80,16 +80,16 @@ qcalc help
 
 ### Commands
 
-| Command                            | Description                                               |
-| ---------------------------------- | --------------------------------------------------------- |
-| qcalc field N [color]            | Show field values up to N, optionally with color coding |
-| qcalc field-grid N [color]       | Display the 2D fractional grid up to N                  |
-| qcalc div N D                    | Show decimal representation of N/D with repeating cycle |
-| qcalc rec N                      | Show reciprocal of N                                    |
-| qcalc fc N                       | Show foundational coordinates for N                     |
-| qcalc prime N [check-full]       | Check primality of N                                    |
-| qcalc prime-debug N [check-full] | Verbose primality analysis for N                        |
-| qcalc copyright                  | Show version and license                                  |
+| Command                          | Description                                              |
+| -------------------------------- | ---------------------------------------------------------|
+| qcalc field N [color]            | Show field values up to N, optionally with color coding  |
+| qcalc field-grid N [color]       | Display the 2D fractional grid up to N                   |
+| qcalc div N D                    | Show decimal representation of N/D with repeating cycle  |
+| qcalc rec N                      | Show reciprocal of N                                     |
+| qcalc fc N                       | Show foundational coordinates for N                      |
+| qcalc prime N [check-full]       | Check primality of N                                     |
+| qcalc prime-debug N [check-full] | Verbose primality analysis for N                         |
+| qcalc copyright                  | Show version and license                                 |
 
 ---
 
@@ -211,6 +211,14 @@ This section will be updated as new results, experiments, or theoretical advance
 The ideas underlying qCalc arose independently, as a result of my own personal explorations and the exigencies of my life and thought. Only after developing the framework (particularly the notions of numeric polarity and cycle-based primality) did I become aware of resonances with ancient mathematical and philosophical traditions, such as those of Pythagoras and certain classical and Daoist concepts.
 
 The formulation and implementation presented here, as far as I am aware, are original in their algorithmic approach and synthesis. I offer this work as a starting point for discussion and further inquiry, recognizing that new paths in mathematics sometimes echo foundational ideas long forgotten.
+
+---
+
+In every number, a shadow yearns for form,  
+Infinity pauses, counting what it’s lost.  
+Between the silence and the sum,  
+We find the shape that thought forgot.
+A. Petty .:.
 
 ---
 
