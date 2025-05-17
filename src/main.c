@@ -120,8 +120,13 @@ int main(int argc, char *argv[]) {
                 debug_enabled = 1;
                 printf("DEBUG: Checking fractions 1/%s to %s/%s for primality\n", n_str, half_minus_one_str, n_str);
             }
-            check_full(n);
+            int prime_result = check_full(n);
             debug_enabled = 0;
+            if (prime_result) {
+                printf("prime\n");
+            } else {
+                printf("not a prime\n");
+            }
 
             free(half_minus_one_str);
             mpz_clear(half_minus_one);

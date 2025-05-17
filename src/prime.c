@@ -51,10 +51,9 @@ void check_first(mpz_t n) {
 }
 
 // Check all fractions from 1/n to ((n-1)/2)/n
-void check_full(mpz_t n) {
+int check_full(mpz_t n) {
     if (is_primordial(n) || mpz_even_p(n)) {
-        printf("not a prime\n");
-        return;
+        return 0;
     }
 
     mpz_t i, half_n;
@@ -122,11 +121,7 @@ void check_full(mpz_t n) {
     mpz_clear(i);
     mpz_clear(half_n);
 
-    if (is_prime) {
-        printf("prime\n");
-    } else {
-        printf("not a prime\n");
-    }
+    return is_prime;
 }
 
 // Custom primality check incorporating primordial and radial checks
@@ -143,15 +138,19 @@ int prime_check(mpz_t n) {
         return 0;
     }
 
-    check_full(n);  // Use check_full to verify if n is prime via complete fraction checks
-    return 1; // If previous checks passed, return prime status
+    return check_full(n);  // Use check_full to verify if n is prime via complete fraction checks
 }
 
 // Wrapper function for prime checks with optional foundational coordinates
 void print_prime_str(const char *str, int fc) {
     mpz_t n;
     mpz_init_set_str(n, str, 10);
-    prime_check(n);
+    int result = prime_check(n);
+    if (result) {
+        printf("prime\n");
+    } else {
+        printf("not a prime\n");
+    }
     mpz_clear(n);
 }
 
