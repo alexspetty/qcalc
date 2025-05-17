@@ -95,7 +95,7 @@ qcalc help
 
 ### Linux (Ubuntu/Debian)
 
-bash
+```bash
 sudo apt-get install libgmp-dev
 git clone https://github.com/yourusername/qcalc.git
 cd qcalc
@@ -103,7 +103,7 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 ./qcalc field 9 color
-
+```
 
 ---
 
@@ -113,26 +113,26 @@ cmake --build .
 2. Launch **MSYS2 UCRT64** shell
 3. Install build dependencies:
 
-bash
-pacman -Syu
-pacman -S --needed \
-  mingw-w64-ucrt-x86_64-toolchain \
-  mingw-w64-ucrt-x86_64-cmake \
-  mingw-w64-ucrt-x86_64-gmp
-
+    ```bash
+    pacman -Syu
+    pacman -S --needed \
+      mingw-w64-ucrt-x86_64-toolchain \
+      mingw-w64-ucrt-x86_64-cmake \
+      mingw-w64-ucrt-x86_64-gmp
+    ```
 
 4. Build the project:
 
-bash
-git clone https://github.com/yourusername/qcalc.git
-cd qcalc
-mkdir build && cd build
-cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
-mingw32-make
-./qcalc field 9 color
+    ```bash
+    git clone https://github.com/yourusername/qcalc.git
+    cd qcalc
+    mkdir build && cd build
+    cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
+    mingw32-make
+    ./qcalc field 9 color
+    ```
 
-
-> Output binary is qcalc.exe
+> Output binary is `qcalc.exe`
 
 ---
 
