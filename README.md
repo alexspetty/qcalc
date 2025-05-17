@@ -161,6 +161,14 @@ mingw32-make
 
 ---
 
+## Note on Originality and Historical Context
+
+The ideas underlying qCalc arose independently, as a result of my own personal explorations and the exigencies of my life and thought. Only after developing the framework—particularly the notions of numeric polarity and cycle-based primality—did I become aware of resonances with ancient mathematical and philosophical traditions, such as those of Pythagoras and certain classical and Daoist concepts.
+
+The formulation and implementation presented here, as far as I am aware, are original in their algorithmic approach and synthesis. I offer this work as a starting point for discussion and further inquiry, recognizing that new paths in mathematics sometimes echo foundational ideas long forgotten.
+
+---
+
 ## License
 
 (C) 1997–2025 Alexander S. Petty
