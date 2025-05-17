@@ -72,17 +72,17 @@ This model underpins qCalc’s core logic. In particular, it explains why closed
 
 The behavior of 0 becomes especially clear when viewed through the multiplication tables modulo 9. The following diagrams show the repeating sequences formed by multiplying integers modulo 9 and tracing their paths in circular space.
 
-![Four's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fours-table-chart.png)
+![Four's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fours-table-chart-.png)
 *Figure: The 4’s multiplication table traced on a base-10 digit circle.*
 
-![Five's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fives-table-chart.png)
+![Five's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fives-table-chart-1.png)
 *Figure: The 5’s multiplication table traced on the same circle.*
 
 In both patterns, note how the directional flow changes precisely at 0. Rather than sitting at the center, 0 lies on the perimeter—**between 4 and 5**, exactly where the current reverses. This suggests that 0 is not simply a neutral placeholder but a **point of inversion**, a **true zero point** in the energetic field.
 
 This becomes even clearer in the full multiplication grid below:
 
-![Multiplication Tables Mod 9](http://www.alexpetty.com/wp-content/uploads/2018/12/foundational-multiplication-tables.png)
+![Multiplication Tables Mod 9](http://www.alexpetty.com/wp-content/uploads/2018/12/foundational-tables-of-multiplication.png)
 
 The m9 columns reveal consistent cycle closure at 0 and 9. These points are **not endpoints**, but **phase boundaries** that govern the rhythm of polarity through the system.
 
