@@ -17,7 +17,11 @@ void print_fc_str(const char *str)
 {
     mpz_t n, height;
     unsigned short int shadow;
-    mpz_init_set_str(n, str, 10);
+    if (mpz_init_set_str(n, str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", str);
+        mpz_clear(n);
+        return;
+    }
     mpz_init(height);
     shadow = get_fc(n, height);
     gmp_printf("n: %Zd\n", n);

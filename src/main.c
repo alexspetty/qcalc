@@ -44,7 +44,11 @@ void print_number_with_color(int value) {
 // Modify existing functions to use the new color printing function
 void print_field_str_color(const char *n_str, int debug_enabled) {
     mpz_t n, i;
-    mpz_init_set_str(n, n_str, 10);
+    if (mpz_init_set_str(n, n_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", n_str);
+        mpz_clear(n);
+        return;
+    }
     mpz_init_set_ui(i, 1);
     while (mpz_cmp(i, n) <= 0) { // Ensure inclusive up to n
         mpz_div_print(i, n, debug_enabled);
@@ -56,7 +60,11 @@ void print_field_str_color(const char *n_str, int debug_enabled) {
 
 void print_field_str_no_color(const char *n_str, int debug_enabled) {
     mpz_t n, i;
-    mpz_init_set_str(n, n_str, 10);
+    if (mpz_init_set_str(n, n_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", n_str);
+        mpz_clear(n);
+        return;
+    }
     mpz_init_set_ui(i, 1);
     while (mpz_cmp(i, n) <= 0) { // Ensure inclusive up to n
         mpz_div_print(i, n, debug_enabled);
@@ -107,7 +115,11 @@ int main(int argc, char *argv[]) {
         }
 
         mpz_t n, half_minus_one;
-        mpz_init_set_str(n, argv[2], 10);
+        if (mpz_init_set_str(n, argv[2], 10) != 0) {
+            fprintf(stderr, "ERROR: Invalid integer '%s'\n", argv[2]);
+            mpz_clear(n);
+            return 1;
+        }
 
         // Prepare strings for debug output
         char *n_str = mpz_get_str(NULL, 10, n);
