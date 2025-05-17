@@ -19,6 +19,7 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
     char buffer[2];
     mpz_t *history = NULL;
     int history_size = 0;
+    int history_cap = 16; // initial capacity for history
     int i, end = 0;
 
     nr = (char *)malloc(sizeof(char));
@@ -32,7 +33,7 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
 
     mpz_init(q);
     mpz_init_set_ui(zero, 0);
-    history = (mpz_t *)malloc(sizeof(mpz_t));
+    history = (mpz_t *)malloc(sizeof(mpz_t) * history_cap);
     if (history == NULL) {
         fprintf(stderr, "ERROR: Memory allocation for history failed.\n");
         free(nr);
@@ -43,22 +44,27 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
     }
 
     while (1) {
+        if (history_size >= history_cap) {
+            int new_cap = history_cap * 2;
+            mpz_t *tmp_history = (mpz_t *)realloc(history, sizeof(mpz_t) * new_cap);
+            if (tmp_history == NULL) {
+                fprintf(stderr, "ERROR: History reallocation failed.\n");
+                free(nr);
+                free(rp);
+                for (int j = 0; j < history_size; j++) {
+                    mpz_clear(history[j]);
+                }
+                free(history);
+                mpz_clear(q);
+                mpz_clear(zero);
+                return -1; // Indicate error
+            }
+            history = tmp_history;
+            history_cap = new_cap;
+        }
+
         mpz_init_set(history[history_size], n);
         history_size++;
-        mpz_t *tmp_history = (mpz_t *)realloc(history, sizeof(mpz_t) * (history_size + 1));
-        if (tmp_history == NULL) {
-            fprintf(stderr, "ERROR: History reallocation failed.\n");
-            free(nr);
-            free(rp);
-            for (int j = 0; j < history_size; j++) {
-                mpz_clear(history[j]);
-            }
-            free(history);
-            mpz_clear(q);
-            mpz_clear(zero);
-            return -1; // Indicate error
-        }
-        history = tmp_history;
 
         mpz_mul_ui(n, n, 10);
         mpz_tdiv_qr(q, n, n, d);
