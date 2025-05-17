@@ -60,13 +60,32 @@ This diagram illustrates the foundational polarity structure embedded within the
 - **Positive Polarity**: 4, 3, 2  
 - **Negative Polarity**: 7, 6, 5  
 - **Neutral Polarity**: 8, 9, 1  
-  (with 0 at the center as the ineffable precursor)
+  (with 0 positioned between 4 and 5 as the point where rotational direction changes—a true zero point, the boundary where polarity reverses)
 
 The digits are arranged in mirrored symmetry across a circular field. Each number has a polarity complement (1 with 8, 2 with 7, 3 with 6, 4 with 5), and the diagram shows directional flow within these families—reflecting the contractive and expansive behaviors modeled throughout qCalc.
 
 Unlike traditional number classifications (such as odd versus even), the polarity model reinterprets digits based on their functional role within a universal field. This is more than aesthetic: polarity informs how repeating decimals behave, how field structures emerge, and how numeric “energy” is distributed and balanced.
 
 This model underpins qCalc’s core logic. In particular, it explains why closed repeating cycles that reduce to 9 or 0 carry special significance in the system’s definition of primality, and why integers are treated not as isolated points, but as structured universes that arise through the expansion and contraction of this core polarity cycle.
+
+### Cyclic Polarity Reversal at Zero
+
+The behavior of 0 becomes especially clear when viewed through the multiplication tables modulo 9. The following diagrams show the repeating sequences formed by multiplying integers modulo 9 and tracing their paths in circular space.
+
+![Four's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fours-table-chart.png)
+*Figure: The 4’s multiplication table traced on a base-10 digit circle.*
+
+![Five's Table](http://www.alexpetty.com/wp-content/uploads/2018/12/fives-table-chart.png)
+*Figure: The 5’s multiplication table traced on the same circle.*
+
+In both patterns, note how the directional flow changes precisely at 0. Rather than sitting at the center, 0 lies on the perimeter—**between 4 and 5**, exactly where the current reverses. This suggests that 0 is not simply a neutral placeholder but a **point of inversion**, a **true zero point** in the energetic field.
+
+This becomes even clearer in the full multiplication grid below:
+
+![Multiplication Tables Mod 9](http://www.alexpetty.com/wp-content/uploads/2018/12/foundational-multiplication-tables.png)
+
+The m9 columns reveal consistent cycle closure at 0 and 9. These points are **not endpoints**, but **phase boundaries** that govern the rhythm of polarity through the system.
+
 
 
 ### Expansion and Contraction
