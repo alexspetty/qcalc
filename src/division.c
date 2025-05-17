@@ -200,3 +200,44 @@ void print_field_str(const char *n_str, int debug_enabled) {
     mpz_clear(n);
     mpz_clear(i);
 }
+
+void print_field_grid(const char *n_str, int debug_enabled) {
+    mpz_t n, i;
+    mpz_init_set_str(n, n_str, 10);
+    mpz_init_set_ui(i, 1);
+
+    while (mpz_cmp(i, n) <= 0) {
+        char *a = NULL, *p = NULL;
+        int type = mpz_pfraction_str(&a, &p, i, n);
+
+        const char *digits = NULL;
+        if (type == 0) {
+            digits = a;
+        } else if (p != NULL && strlen(p) > 0) {
+            digits = p;
+        } else {
+            digits = "0";
+        }
+
+        int digit_sum = 0;
+        for (int j = 0; digits[j] != '\0'; j++) {
+            if (j > 0) printf(" ");
+            int value = digits[j] - '0';
+            print_number_with_color(value);
+            digit_sum += value;
+        }
+
+        if (debug_enabled) {
+            printf(" %d", reduce_to_single_digit(digit_sum));
+        }
+
+        printf("\n");
+
+        free(a);
+        free(p);
+        mpz_add_ui(i, i, 1);
+    }
+
+    mpz_clear(n);
+    mpz_clear(i);
+}
