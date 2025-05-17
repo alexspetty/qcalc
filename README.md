@@ -218,6 +218,7 @@ In every number, a shadow yearns for form,
 Infinity pauses, counting what it’s lost.  
 Between the silence and the sum,  
 We find the shape that thought forgot.
+
 A. Petty .:.
 
 ---
