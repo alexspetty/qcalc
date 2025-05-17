@@ -174,40 +174,39 @@ This section will be updated as new results, experiments, or theoretical advance
 
 ## What qCalc Delivers: Reality, Experiment, and Vision
 
-**qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. For clarity, here’s what the codebase actually does, and what remains open or speculative:**
+qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. For clarity, here is what the codebase actually does, and what remains open or speculative:
 
 ### What the Codebase Delivers
 
-- **Polarity and Field Visualization:**  
+* Polarity and Field Visualization:
   qCalc computes, color-codes, and visualizes the "polarity" of digits, repeating decimals, and numeric fields. Users can immediately see patterns and symmetries in integer fields and decimal expansions.
 
-- **Alternative Primality Framework:**  
+* Alternative Primality Framework:
   qCalc implements a novel definition of primality based on closed cycle behavior and digital root neutrality (digits summing to 0 or 9), which is distinct from classical divisibility-based tests.
 
-- **Quaternary and Pairing System:**  
-  Numeric polarity pairings (1/8, 2/7, 3/6, 4/5) are encoded in the logic and color schemes, allowing exploration of these relationships in a computational context.
+* Quaternary and Pairing System:
+  Numeric polarity pairings (1 with 8, 2 with 7, 3 with 6, 4 with 5) are encoded in the logic and color schemes, allowing exploration of these relationships in a computational context.
 
-- **Arbitrary Precision and Batch Experimentation:**  
+* Arbitrary Precision and Batch Experimentation:
   Built on GMP, qCalc can compute with very large numbers and run automated tests and field visualizations at scale.
 
-- **Exploratory CLI and Test Suite:**  
+* Exploratory CLI and Test Suite:
   The included scripts and command-line interface allow users to run, test, and expand on all core features.
 
 ### What Is Exploratory or Speculative
 
-- **Simulation Theory, Quantum Substrate, and Consciousness:**  
+* Simulation Theory, Quantum Substrate, and Consciousness:
   While qCalc is inspired by questions about simulation theory and the quantum nature of reality, it does not simulate physical quantum systems or consciousness. These concepts serve as motivating metaphors for new mathematical patterns and definitions.
 
-- **Physical and Biological Analogies:**  
+* Physical and Biological Analogies:
   The analogies to DNA, polarity in physics, and quantum informational structures are suggestive and offer new ways of thinking, but remain unproven. The code does not directly analyze DNA or physical systems.
 
 ### What Remains to Be Proven
 
-- **Empirical/Mathematical Proof:**  
+* Empirical and Mathematical Proof:
   The claims about new primality criteria, polarity neutrality, or structural analogies to physics are conjectures. Their validity is open for testing, falsification, and formal proof or refutation.
 
-**In summary:**  
-qCalc is both a working computational platform and a springboard for further inquiry. It delivers fully on visualization, experimental computation, and the implementation of new definitions, while inviting readers and collaborators to explore, test, and—if possible—prove or challenge its deeper claims.
+In summary, qCalc is both a working computational platform and a springboard for further inquiry. It delivers fully on visualization, experimental computation, and the implementation of new definitions, while inviting readers and collaborators to explore, test, and, if possible, prove or challenge its deeper claims.
 
 ---
 
