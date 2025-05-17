@@ -207,12 +207,23 @@ void print_field_grid(const char *n_str, int debug_enabled) {
     mpz_init_set_str(n, n_str, 10);
     mpz_init_set_ui(i, 1);
 
+    int max_digits = 20; // Limit digits shown per cell
+    int max_rows = 1000; // Absolute hard cap to avoid runaway
+    int row_count = 0;
+
+    gmp_printf("Field grid for n = %Zd:\n", n);
+
     while (mpz_cmp(i, n) <= 0) {
+        // Make a safe local copy of i for the function call
+        mpz_t i_copy;
+        mpz_init_set(i_copy, i);
+
         char *a = NULL, *p = NULL;
-        int type = mpz_pfraction_str(&a, &p, i, n);
+        int type = mpz_pfraction_str(&a, &p, i_copy, n);
+        mpz_clear(i_copy);
 
         const char *digits = NULL;
-        if (type == 0) {
+        if (type == 0 && a != NULL) {
             digits = a;
         } else if (p != NULL && strlen(p) > 0) {
             digits = p;
@@ -221,22 +232,32 @@ void print_field_grid(const char *n_str, int debug_enabled) {
         }
 
         int digit_sum = 0;
-        for (int j = 0; digits[j] != '\0'; j++) {
+        int printed = 0;
+        for (int j = 0; digits[j] != '\0' && printed < max_digits; j++) {
             if (j > 0) printf(" ");
             int value = digits[j] - '0';
             print_number_with_color(value);
             digit_sum += value;
+            printed++;
         }
-
+        if (digits[printed] != '\0') {
+            printf(" ..."); // Indicate truncation
+        }
         if (debug_enabled) {
             printf(" %d", reduce_to_single_digit(digit_sum));
         }
-
         printf("\n");
+        fflush(stdout);
 
         free(a);
         free(p);
         mpz_add_ui(i, i, 1);
+
+        row_count++;
+        if (row_count > max_rows) {
+            printf("[ERROR] Too many rows; force quitting loop.\n");
+            break;
+        }
     }
 
     mpz_clear(n);

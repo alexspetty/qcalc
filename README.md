@@ -1,88 +1,167 @@
-# qCalc - Quantum Calculator
+# qCalc — Quantum Calculator
+
+## Overview
+
+**qCalc** explores numeric polarity and primality within the framework of simulation theory. It proposes that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. Originally grounded in a Pythagorean view of numbers as direct representations of consciousness, the project now suggests that consciousness emerges from a deeper informational layer — with numbers functioning like qubits or symbolic instructions in a quantum engine.
+
+This C-based command-line tool uses [GMP](https://gmplib.org/) for arbitrary-precision arithmetic and offers new ways to visualize numeric polarity, symmetry, and primality as foundational principles of computation.
+
+---
 
 ## Abstract
 
-qCalc delves into numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. I initially considered numbers as direct representations of consciousness in a Pythagorean sense, however my work now suggests consciousness emerges from a quantum mechanical informational substrate with numbers as its underpinning — akin to bits in binary systems. This quaternary system utilizes digits 0 through 9, pairing 1 with 8, 2 with 7, 3 with 6, and 4 with 5.
+qCalc delves into numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. I initially considered numbers as direct representations of consciousness in a Pythagorean sense, however my work now suggests consciousness emerges from a quantum mechanical informational substrate with numbers as its underpinning akin to bits in binary systems. This quaternary system utilizes digits 0 through 9, pairing 1 with 8, 2 with 7, 3 with 6, and 4 with 5.
 
 In a symbolic echo of Daoist thought, where "the one becomes the three, which becomes the 10,000 things," the numbers 1, 2, and 5 represent primordial concepts of subject, object, and boundary. These numbers underpin the dynamic processes of contraction and expansion within the numeric framework:
    - **Expansion**: The influence of Phi (\(\phi = \frac{1 + 5^{1/2}}{2}\)) symbolizes systemic expansion, resonating with the growth and outward forces in numeric and cosmic patterns.
    - **Contraction**: Conversely, the contraction is represented by the reciprocal of Phi (\(1/\phi = \frac{1 - 5^{1/2}}{2}\)), embodying the inward forces that stabilize and counterbalance expansion, ensuring systemic balance. 
-0 is viewed as the ineffable precursor to unity and differentiation, while 9 and its entire radial family echoes the energy that came before infinity decencended to manifestation; which is to say before "the simulation" was activated.
+0 is viewed as the ineffable precursor to unity and differentiation, while 9 and its entire radial family echoes the energy that came before infinity descended to manifestation; which is to say before "the simulation" was activated.
 
 qCalc posits that integers themselves are an illusion of distinct particles, and true comprehension of the quantum field arises through analyzing the number of parts within the whole — represented by the universal consideration set, U. Each integer is perceived as its own universe, consisting of U number of parts, and the project explores the underlying polar structures contained within. The focus extends to understanding how these forces and forms dynamically evolve as U expands and contracts, akin to cymatic patterns in audio oscillations, albeit fundamentally more intrinsic to reality's construction.
 
 In nature, all things seen and unseen, the intricate processes reflect optimized methods of encoding and transmitting information, exemplified by DNA and RNA. The quaternary makeup of DNA, through Adenosine (A), Thymine (T), Cytosine (C), and Guanine (G), which pair due to polar forces, has inspired qCalc's exploration of a shift from binary to quaternary paradigms. Similarly, qCalc's numeric relationships demonstrate polarity and symmetry, where numbers take on distinct roles — positive, negative, and neutral — reminiscent of DNA's polar interplay. At this foundational stage, qCalc employs color coding to visualize such polarities, offering insights into potential computational interactions possibly underlying reality. It acts as initial steps towards quantum-level simulations, wherein numbers embody characteristics akin to quantum particles, providing a framework for understanding how numeric patterns may influence the construction of reality.
 
-## Contributors
+---
 
-We would like to acknowledge the valuable contributions to the qCalc project:
+## Core Concepts
 
-- **Dario Cangialosi** - Provided the initial implementation especially for closed and open cycle detection and taught me how to utilize the GMP library.
+### Quaternary Polarity System
 
-## New Definition for Primality
+The system uses digits 0 through 9, pairing them into polar complements:
 
-qCalc introduces a novel framework for determining the primality of integers. In this system, a prime number is characterized not only by its lack of divisibility but through its neutral numeric polarity, a unique property resonating with the stabilizing constructs 0 and 9 within a broader systemic pattern. This numeric polar neutrality is posited to inherently prevent divisibility by other numbers—rules inherent to the quantum self-organizing systems they comprise—unveiling deeper structural properties shaping our particulate reality.
+- **1 ↔ 8**  
+- **2 ↔ 7**  
+- **3 ↔ 6**  
+- **4 ↔ 5**  
+- **0 & 9** act as neutral poles
 
-The criteria for primality within qCalc's framework include:
+This echoes natural systems like **DNA pairing**, **polarity in magnetism**, and **taoist dualities**, mapping mathematical behavior onto energetic forces.
 
-1. **Primordial Numbers**: Numbers 1, 2, and 5 are recognized as primordial and foundational. Though 1 and 2 do not meet the criteria for primality, they, along with 5, represent basic constructs at the system's lowest level.
-2. **Radial Check**: An integer is excluded from being considered prime if its modulo 9 equals 0, 3, or 6, aligning its placement within recognized geometric symmetries and axial alignments.
-3. **Even Number Rule**: Even numbers are non-prime due to inherent divisional symmetry, consistent with established mathematical properties and polar dynamics.
-4. **Closed Cycle Sequence Analysis**: For U values outside of the primoridal 1, 2, and 5, fractional constructs from 1/n to (n-1)/2/n must achieve sums of 9 (or 0) within their closed-cycle repeating sequences.
+### Expansion & Contraction
 
-This framework suggests that numbers embody cosmic symmetries and mathematical structures integral to quantum mechanics principles. By considering numeric patterns as integral parts of the universe's deeper informational substrate, qCalc aspires to integrate these theoretical insights seamlessly with empirical exploration, welcoming rigorous scrutiny and engagement across scientific disciplines.
+- **Expansion** is modeled by the golden ratio:  
+  \(\phi = \frac{1 + \sqrt{5}}{2}\)
+  
+- **Contraction** by its reciprocal:  
+  \(\frac{1}{\phi} = \frac{1 - \sqrt{5}}{2}\)
+
+These forces manifest in the structure and behaviors of numeric sequences, repeating decimals, and primes.
+
+---
 
 ## Features
 
-- **Foundational Coordinates (fc)**: Calculates the foundational coordinates of an integer along a numeric spiral, offering insights into its positional attributes.
-- **Prime Checks**: Verifies if an integer is a prime number based on qCalc's unique criteria, optionally displaying foundational coordinates.
-- **Arbitrary Precision Division**: Executes divisions with high precision offered by GMP, identifying open, closed, and mixed cycle sequences.
-- **Field Calculations**: Illustrates the divisions leading up to a given number with optional color-coding to represent polarity:
-  - **Neutral (0, 9)**: Depicted in blue, representing the neutral computational state.
-  - **Positive Pole (3)**: Highlighted in bold red, indicating positive force attraction.
-  - **Negative Pole (6)**: Highlighted in bold black, indicating negative force attraction.
-  - **Positive Forms (2, 4, 8)**: Shown in lighter red, denoting values drawn to positive influence.
-  - **Negative Forms (1, 5, 7)**: Shown in dark grey, denoting values drawn to negative influence.
-- **Field Grid**: Shows the field calculations up to a given integer arranged as a 2D grid for quick visual reference.
+- **Foundational Coordinates (fc)**: Projects integers onto a numeric spiral for positional analysis.
+- **Prime Detection**: Uses a novel primality framework based on polarity and repeating decimal behavior.
+- **Field Calculations**: Visualizes a number’s fractional field with optional polarity-aware color coding.
+- **Reciprocals & Division**: High-precision recurring cycle detection using GMP.
+- **Field Grids**: Displays numeric field data in a matrix form for insight into symmetry and energy distribution.
+
+---
+
+## New Definition of Primality
+
+qCalc defines primes based on energetic neutrality and closed-cycle behavior:
+
+1. **Primordial Numbers**: 1, 2, and 5 are base units; only 5 is considered prime by this system.
+2. **Radial Check**: Excludes numbers where `n % 9 == 0, 3, or 6`.
+3. **Even Rule**: Excludes all even numbers due to symmetrical divisibility.
+4. **Closed Cycle Test**: Valid primes have repeating cycles from `1/n` to `((n-1)/2)/n` whose digit sums reduce to 9 or 0.
+
+---
 
 ## Usage
 
-Example commands:
-- `qcalc help` - Displays a help message with available commands and their options.
-- `qcalc copyright` - Prints copyright information.
-- `qcalc field INTEGER [color]` - Displays the numeric field values up to a given integer; add 'color' to enable color coding.
-- `qcalc field-grid INTEGER [color]` - Display field calculations in a 2D grid; add 'color' to enable color coding.
-- `qcalc div INTEGER INTEGER` - Performs arbitrary precision division, identifying open, closed, and mixed cycle sequences.
-- `qcalc rec INTEGER` - Displays the arbitrary precision reciprocal representation of an integer.
-- `qcalc fc INTEGER` - Calculates and displays the foundational coordinates of an integer.
-- `qcalc prime INTEGER [check-first|check-full]` - Determines the primality based on qCalc's unique rules.
-- `qcalc prime-debug INTEGER [check-first|check-full]` - Debug mode for detailed primality step logs, providing insights into process evaluations.
+```bash
+qcalc help
+```
+
+### Commands
+
+| Command                            | Description                                               |
+| ---------------------------------- | --------------------------------------------------------- |
+| `qcalc field N [color]`            | Show field values up to `N`, optionally with color coding |
+| `qcalc field-grid N [color]`       | Display the 2D fractional grid up to `N`                  |
+| `qcalc div N D`                    | Show decimal representation of `N/D` with repeating cycle |
+| `qcalc rec N`                      | Show reciprocal of `N`                                    |
+| `qcalc fc N`                       | Show foundational coordinates for `N`                     |
+| `qcalc prime N [check-full]`       | Check primality of `N`                                    |
+| `qcalc prime-debug N [check-full]` | Verbose primality analysis for `N`                        |
+| `qcalc copyright`                  | Show version and license                                  |
+
+---
 
 ## Installation
 
-qCalc requires GMP for arbitrary precision arithmetic. To install GMP on Ubuntu:
-```
+### Linux (Ubuntu/Debian)
+
+```bash
 sudo apt-get install libgmp-dev
-```
-Then, you can build qCalc using CMake:
-```
-mkdir build
-cd build
+git clone https://github.com/yourusername/qcalc.git
+cd qcalc
+mkdir build && cd build
 cmake ..
 cmake --build .
+./qcalc field 9 color
 ```
+
+---
+
+### Windows (MSYS2 / MinGW64 / UCRT64)
+
+1. Install [MSYS2](https://www.msys2.org/)
+2. Launch **MSYS2 UCRT64** shell
+3. Install build dependencies:
+
+```bash
+pacman -Syu
+pacman -S --needed \
+  mingw-w64-ucrt-x86_64-toolchain \
+  mingw-w64-ucrt-x86_64-cmake \
+  mingw-w64-ucrt-x86_64-gmp
+```
+
+4. Build the project:
+
+```bash
+git clone https://github.com/yourusername/qcalc.git
+cd qcalc
+mkdir build && cd build
+cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
+mingw32-make
+./qcalc field 9 color
+```
+
+> Output binary is `qcalc.exe`
+
+---
+
+## Contributors
+
+- **Alexander S. Petty** — Design, theory, architecture  
+- **Dario Cangialosi** — Cycle detection and GMP integration (implemented the entire first version of the software)
+
+---
 
 ## Practical Applications
 
-qCalc offers numerous potential applications in fields such as quantum computing, theoretical physics, mathematical modeling, and even teleology. For instance, by applying its unique primality tests, qCalc might offer novel insights into quantum cryptographic systems, enhance algorithmic efficiency in data structures, and provide new methods for pattern recognition in complex datasets.
+* Cryptography and quantum-inspired key systems
+* Symbolic computation in simulation theory
+* Visual analysis of numeric structure and field symmetry
+* Educational and philosophical explorations of prime theory
+
+---
 
 ## Future Directions
 
-The exploration of numerical polarity and its relationship to cosmic symmetries paves the way for advancements in interdisciplinary research. Future iterations of qCalc might integrate empirical findings from experimental quantum systems, enhancing our visualization of numeric particles and the oscillatory numeric wave substrates associated with the contraction and expansion of the universal consideration set (U). This presents significant potential for collaborative exploration within academic circles and technology-driven environments.
+* GPU acceleration via CUDA (experimental)
+* MSVC-compatible builds via Boost Multiprecision
+* Visual UI for grid rendering
+* Collaborative prime visualization server
 
+---
 
 ## License
 
-(C) 1997-2024 A. Petty .:.
-
-qCalc is distributed under an open-source license. See LICENSE for more details.
+(C) 1997–2025 Alexander S. Petty
+qCalc is distributed under an open-source license. See `LICENSE` for details.
