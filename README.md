@@ -155,26 +155,9 @@ cmake --build .
 * Collaborative prime visualization server
 
 ---
-
-## From Speculation to Proof: An Invitation
-
-qCalc was born from intuition, observation, and synthesis, but its deepest claims remain, for now, speculative. I believe that moving from conceptual exploration to mathematical proof is both possible and necessary. Here are a few ways I see this work becoming provable (or at least testable):
-
-1. Explicit Conjectures: Each core assertion (for example, the redefinition of primality based on polarity neutrality) can be formalized as a mathematical conjecture. Such conjectures can then be tested against known results and computationally explored for counterexamples.
-
-2. Computational Experiments: The codebase itself is designed for large-scale, automated testing. By generating and analyzing data (for example, checking qCalc's definition of primality across broad numeric ranges), patterns or anomalies can be identified and studied.
-
-3. Comparison with Established Theory: By mapping the outputs and behaviors of qCalc to classical number theory, modular arithmetic, or even physical models, new relationships or boundaries may be uncovered.
-
-4. Peer Collaboration: I encourage mathematicians, physicists, and theorists to propose proofs, refutations, or refinements of any aspect of this framework. Even identifying a single counterexample to a conjecture would be a valuable contribution.
-
-This section will be updated as new results, experiments, or theoretical advances emerge. qCalc is an experiment in both mathematics and scientific process, and I invite you to help move it from principled speculation toward proof.
-
----
-
 ## What qCalc Delivers: Reality, Experiment, and Vision
 
-qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. For clarity, here is what the codebase actually does, and what remains open or speculative.
+qCalc is both a practical computational tool and a platform for mathematical and philosophical exploration. Here is what the codebase actually does:
 
 ### What the Codebase Delivers
 
@@ -203,10 +186,23 @@ qCalc is both a practical computational tool and a platform for mathematical and
 
 ### What Remains to Be Proven
 
-* Empirical and Mathematical Proof:
-  The claims about new primality criteria, polarity neutrality, or structural analogies to physics are conjectures. Their validity is open for testing, falsification, and formal proof or refutation.
+For more on how these ideas might be formalized, tested, or proven, see the next section, "From Speculation to Proof."
 
-In summary, qCalc is both a working computational platform and a springboard for further inquiry. It delivers fully on visualization, experimental computation, and the implementation of new definitions, while inviting readers and collaborators to explore, test, and, if possible, prove or challenge its deeper claims.
+---
+
+## From Speculation to Proof: An Invitation
+
+qCalc was born from intuition, observation, and synthesis, but its deepest claims remain, for now, speculative. I believe that moving from conceptual exploration to mathematical proof is both possible and necessary. Here are a few ways I see this work becoming provable (or at least testable):
+
+1. Explicit Conjectures: Each core assertion (for example, the redefinition of primality based on polarity neutrality) can be formalized as a mathematical conjecture. Such conjectures can then be tested against known results and computationally explored for counterexamples.
+
+2. Computational Experiments: The codebase itself is designed for large-scale, automated testing. By generating and analyzing data (for example, checking qCalc's definition of primality across broad numeric ranges), patterns or anomalies can be identified and studied.
+
+3. Comparison with Established Theory: By mapping the outputs and behaviors of qCalc to classical number theory, modular arithmetic, or even physical models, new relationships or boundaries may be uncovered.
+
+4. Peer Collaboration: I encourage mathematicians, physicists, and theorists to propose proofs, refutations, or refinements of any aspect of this framework. Even identifying a single counterexample to a conjecture would be a valuable contribution.
+
+This section will be updated as new results, experiments, or theoretical advances emerge. qCalc is an experiment in both mathematics and scientific process, and I invite you to help move it from principled speculation toward proof.
 
 ---
 
