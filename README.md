@@ -55,7 +55,7 @@ This echoes natural systems like DNA pairing, polarity in magnetism, and Taoist 
 
 ![Polarity Map](http://www.alexpetty.com/wp-content/uploads/2018/12/numeric-polarity-2.png)
 
-This diagram illustrates the foundational polarity structure embedded within the base-10 number system, as revealed through the first full cycle of 9. In qCalc, this cycle is not just a counting loop—it represents a complete energetic system, one that divides the digits 0 through 9 into three distinct polar domains:
+This diagram illustrates the foundational polarity structure embedded within the base-10 number system, revealed through the internal symmetry of its first complete digital cycle (1 through 9). While the system operates in base 10, it is the modulus 9 structure (the repeating sum-cycle and polarity mirror) that defines the energetic field underlying qCalc. In qCalc, this cycle is not just a counting loop, it represents a complete energetic system; one that divides the digits 0 through 9 into three distinct polar domains:
 
 - **Positive Polarity**: 4, 3, 2  
 - **Negative Polarity**: 7, 6, 5  
@@ -68,8 +68,6 @@ Unlike traditional number classifications (such as odd versus even), the polarit
 
 This model underpins qCalc’s core logic. In particular, it explains why closed repeating cycles that reduce to 9 or 0 carry special significance in the system’s definition of primality, and why integers are treated not as isolated points, but as structured universes that arise through the expansion and contraction of this core polarity cycle.
 
-> "The first cycle of 9 is not the beginning of number—it is the first closure of form."  
-> — A. Petty
 
 ### Expansion and Contraction
 
