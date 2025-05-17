@@ -138,13 +138,6 @@ cmake --build .
 
 ---
 
-## Contributors
-
-- **Alexander S. Petty**, Design, theory, architecture  
-- **Dario Cangialosi**, Cycle detection and GMP integration (implemented the entire first version of the software)
-
----
-
 ## Practical Applications
 
 * Cryptography and quantum-inspired key systems
@@ -223,6 +216,13 @@ qCalc is both a working computational platform and a springboard for further inq
 The ideas underlying qCalc arose independently, as a result of my own personal explorations and the exigencies of my life and thought. Only after developing the framework (particularly the notions of numeric polarity and cycle-based primality) did I become aware of resonances with ancient mathematical and philosophical traditions, such as those of Pythagoras and certain classical and Daoist concepts.
 
 The formulation and implementation presented here, as far as I am aware, are original in their algorithmic approach and synthesis. I offer this work as a starting point for discussion and further inquiry, recognizing that new paths in mathematics sometimes echo foundational ideas long forgotten.
+
+---
+
+## Contributors
+
+- **Alexander S. Petty**, Design, theory, architecture  
+- **Dario Cangialosi**, Cycle detection and GMP integration (implemented the entire first version of the software)
 
 ---
 
