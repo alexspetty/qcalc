@@ -2,7 +2,14 @@
 
 echo "Starting qCalc test suite..."
 
-BIN="../../build/qcalc"
+# Optional: specify qcalc binary via command line or QCALC_BIN env var
+#   QCALC_BIN=/custom/path/qcalc ./test_qcalc.sh
+#   ./test_qcalc.sh /custom/path/qcalc
+
+BIN="${QCALC_BIN:-../../build/qcalc}"
+if [ $# -ge 1 ]; then
+    BIN="$1"
+fi
 if [ ! -x "$BIN" ]; then
     echo "ERROR: qcalc binary not found at $BIN"
     exit 1
