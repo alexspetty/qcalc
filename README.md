@@ -34,9 +34,9 @@ Digits 0 through 9 are grouped into mirrored polarity pairs:
 
 - 1 with 8  
 - 2 with 7  
-- 3 with 6 (positive and negative poles respectively)  
+- 3 with 6 as positive and negative poles respectively
 - 4 with 5  
-- 0 and 9 as neutral or transitional poles
+- 0 and 9 as neutral "pole" or transitional domain
 
 This structure maps onto concepts found in DNA base pairing, magnetic polarity, and symbolic cosmologies. It provides the foundation for qCalc's alternative model of numeric identity.
 
