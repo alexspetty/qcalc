@@ -96,12 +96,75 @@ These forces are reflected in how digit polarity flows across fields, affecting 
 
 ## New Definition of Primality
 
-qCalc defines primes through structural behavior:
+In qCalc, primality is redefined according to the structural and energetic nature of number fields, rather than divisibility alone. Numbers are categorized into three primary types:
 
-1. Primordial Numbers: 1, 2, and 5 are base units; only 5 is considered prime  
-2. Radial Check: Excludes numbers where n % 9 equals 0, 3, or 6  
-3. Even Rule: Excludes even numbers based on symmetry constraints  
-4. Closed Cycle Test: Valid primes have repeating cycles from 1/n to ((n - 1)/2)/n whose digit sums reduce to 9 or 0
+### 1. Structural Numbers (Primordial Numbers)
+
+- These include 1, 2, and 5
+- They are not considered prime under this model
+- They form the foundational scaffolding of the conscious field
+- 1 represents subject, 2 represents duality, and 5 arises automatically from the presence of 2
+
+### 2. Polar Numbers (Closed Cycle Fields)
+
+- These numbers exhibit polarity; they are either positive, negative, or neutral
+- Polarity is established when Unity falls into Plurality
+- Polar numbers have closed internal cycles and shepherd the world of form
+- Examples include 3 (positive), 6 (negative), and 9 (neutral)
+
+### 3. Form Numbers (Open Cycle Fields)
+
+- These numbers are governed by polarity but do not impart it
+- They are part of the observable world of creation and physical phenomena
+- Examples include 4, 8, 10, and higher multiples that follow doubling or halving patterns
+
+---
+
+### Foundational Criteria for Primality
+
+A number is considered prime in qCalc only when:
+
+- Its entire field exhibits a closed-cycle internal structure
+- Each cycle within the field sums to 9 (mod 9), signifying magnetic neutrality
+- The number does not exhibit a net positive or negative polarity
+- It is magnetically inert and unable to geometrically integrate with other fields
+
+---
+
+### Summary of Primality Conditions
+
+1. **Structural Numbers are Excluded:**  
+   1, 2, and 5 are foundational, not prime. They generate the field, but are not part of polarity-neutral structures.
+
+2. **Polarity Check:**  
+   - 3 is excluded; it is a positively polarized archetype  
+   - 6 is excluded; it is negatively polarized  
+   - 9 is neutral, but functions as a phase boundary, not a prime field
+
+3. **Magnetic Neutrality:**  
+   - 7 is the first true prime field  
+   - Prime fields are symmetrical, magnetically neutral, and closed-cycle  
+   - They often produce decimal expansions whose digits reduce to 9 or 0
+
+---
+
+### Implications
+
+- Classical indivisibility is a side effect of neutrality; not the cause
+- Primes are magnetically inert; they cannot form composite geometries without violating field symmetry
+- Their atomic nature arises from structural isolation, not arithmetic
+
+---
+
+### Example Prime Fields
+
+- **7:** First magnetically neutral field  
+- **11:** Composed of symmetric sequences summing to 9  
+- **13, 17, 19, 23:** All contain field components that reflect polarity symmetry and neutrality
+
+---
+
+This redefinition places primality within the energetic structure of number, revealing it as a state of perfect magnetic balance, not just arithmetic isolation. It aligns with the broader qCalc principle that numbers express more than quantity; they encode structural roles within a deeper field.
 
 ---
 
