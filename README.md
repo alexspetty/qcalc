@@ -36,7 +36,7 @@ Digits 0 through 9 are grouped into mirrored polarity pairs:
 - 2 with 7  
 - 3 with 6 as positive and negative poles respectively
 - 4 with 5  
-- 0 and 9 as neutral "pole" or transitional domain
+- 0 and 9 as a neutral pole or transitional space; they function not as static centers, but as phase boundaries where polarity flows shift, reverse, or close
 
 This structure maps onto concepts found in DNA base pairing, magnetic polarity, and symbolic cosmologies. It provides the foundation for qCalc's alternative model of numeric identity.
 
