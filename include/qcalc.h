@@ -12,6 +12,7 @@ void print_fc_str(const char *str);
 // Function declarations for prime checks
 int prime_check(mpz_t n);
 void print_prime_str(const char *str, int fc);
+extern int debug_enabled;
 
 // Check functions for the primality conditions
 void check_first(mpz_t n);  // Check 1/n for primality

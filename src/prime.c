@@ -69,12 +69,15 @@ void check_full(mpz_t n) {
     while (mpz_cmp(i, half_n) <= 0) {
         int type = mpz_pfraction_str(&repeating_part, &terminating_part, i, n);
 
-        // Debug the current fraction being checked
         char *i_str = mpz_get_str(NULL, 10, i);
-        printf("DEBUG: Checking fraction %s/%s\n", i_str, mpz_get_str(NULL, 10, n));
+        if (debug_enabled) {
+            printf("DEBUG: Checking fraction %s/%s\n", i_str, mpz_get_str(NULL, 10, n));
+        }
 
         if (type == -1 || type == 0 || repeating_part == NULL) {
-            printf("DEBUG: Terminating or invalid cycle for %s/%s. Not considered prime based on this row.\n", i_str, mpz_get_str(NULL, 10, n));
+            if (debug_enabled) {
+                printf("DEBUG: Terminating or invalid cycle for %s/%s. Not considered prime based on this row.\n", i_str, mpz_get_str(NULL, 10, n));
+            }
             free(repeating_part);
             free(terminating_part);
             mpz_add_ui(i, i, 1);
@@ -82,7 +85,9 @@ void check_full(mpz_t n) {
             continue;
         }
 
-        printf("DEBUG: Repeating part of %s/%s: %s\n", i_str, mpz_get_str(NULL, 10, n), repeating_part);
+        if (debug_enabled) {
+            printf("DEBUG: Repeating part of %s/%s: %s\n", i_str, mpz_get_str(NULL, 10, n), repeating_part);
+        }
 
         int sum = 0;
         for (int j = 0; repeating_part[j] != '\0'; j++) {
@@ -92,13 +97,19 @@ void check_full(mpz_t n) {
         }
         int reduced_sum = sum % 9;
 
-        printf("DEBUG: Sum of digits in repeating part: %d\n", sum);
-        printf("DEBUG: Reduced sum of digits: %d\n", reduced_sum);
+        if (debug_enabled) {
+            printf("DEBUG: Sum of digits in repeating part: %d\n", sum);
+            printf("DEBUG: Reduced sum of digits: %d\n", reduced_sum);
+        }
 
         if (reduced_sum != 9 && reduced_sum != 0) {
-            printf("DEBUG: Reduced sum is neither 9 nor 0 for %s/%s. Not a prime.\n", i_str, mpz_get_str(NULL, 10, n));
+            if (debug_enabled) {
+                printf("DEBUG: Reduced sum is neither 9 nor 0 for %s/%s. Not a prime.\n", i_str, mpz_get_str(NULL, 10, n));
+            }
             is_prime = 0;
             free(i_str);
+            free(repeating_part);
+            free(terminating_part);
             break;
         }
 

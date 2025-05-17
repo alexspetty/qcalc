@@ -104,9 +104,11 @@ int main(int argc, char *argv[]) {
 
         if (detailed == 0) {
             if (strcmp(argv[1], "prime-debug") == 0) {
+                debug_enabled = 1;
                 printf("DEBUG: Checking 1/%s for primality\n", n_str);
             }
             check_first(n);
+            debug_enabled = 0;
         } else {
             // Calculate (n-1)/2
             mpz_init(half_minus_one);
@@ -115,9 +117,11 @@ int main(int argc, char *argv[]) {
             char *half_minus_one_str = mpz_get_str(NULL, 10, half_minus_one);
 
             if (strcmp(argv[1], "prime-debug") == 0) {
+                debug_enabled = 1;
                 printf("DEBUG: Checking fractions 1/%s to %s/%s for primality\n", n_str, half_minus_one_str, n_str);
             }
             check_full(n);
+            debug_enabled = 0;
 
             free(half_minus_one_str);
             mpz_clear(half_minus_one);
