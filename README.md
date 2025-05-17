@@ -51,6 +51,26 @@ The system uses digits 0 through 9, pairing them into polar complements:
 
 This echoes natural systems like DNA pairing, polarity in magnetism, and Taoist dualities, mapping mathematical behavior onto energetic forces.
 
+### The Polarity Map of the Base-9 Cycle
+
+![Polarity Map](http://www.alexpetty.com/wp-content/uploads/2018/12/numeric-polarity-2.png)
+
+This diagram illustrates the foundational polarity structure embedded within the base-10 number system, as revealed through the first full cycle of 9. In qCalc, this cycle is not just a counting loop—it represents a complete energetic system, one that divides the digits 0 through 9 into three distinct polar domains:
+
+- **Positive Polarity**: 4, 3, 2  
+- **Negative Polarity**: 7, 6, 5  
+- **Neutral Polarity**: 8, 9, 1  
+  (with 0 at the center as the ineffable precursor)
+
+The digits are arranged in mirrored symmetry across a circular field. Each number has a polarity complement (1 with 8, 2 with 7, 3 with 6, 4 with 5), and the diagram shows directional flow within these families—reflecting the contractive and expansive behaviors modeled throughout qCalc.
+
+Unlike traditional number classifications (such as odd versus even), the polarity model reinterprets digits based on their functional role within a universal field. This is more than aesthetic: polarity informs how repeating decimals behave, how field structures emerge, and how numeric “energy” is distributed and balanced.
+
+This model underpins qCalc’s core logic. In particular, it explains why closed repeating cycles that reduce to 9 or 0 carry special significance in the system’s definition of primality, and why integers are treated not as isolated points, but as structured universes that arise through the expansion and contraction of this core polarity cycle.
+
+> "The first cycle of 9 is not the beginning of number—it is the first closure of form."  
+> — A. Petty
+
 ### Expansion and Contraction
 
 - **Expansion** is modeled by the golden ratio:  
