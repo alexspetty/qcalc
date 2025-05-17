@@ -1,32 +1,38 @@
-# Ignore build directory
+# Build and generated directories
 /build/
 /summaries/
+/summary/summary.md
 
-# Ignore generated files
+# Keep the summary script
+!/summary/summarize.sh
+
+# Object and static files
 *.o
 *.a
 *.so
 
-# Ignore CMake generated files
+# CMake-generated files
 CMakeFiles/
 CMakeCache.txt
 Makefile
 cmake_install.cmake
 
-# Ignore executable
+# Binary executable (name may vary by platform)
 qCalc
+qcalc.exe
 
-# Ignore logs and temporary files
+# Logs and temp files
 *.log
 *.tmp
 
-# Ignore IDE specific files
+# IDE-specific files
 .idea/
 .vscode/
+*.iml
 
-# Ignore backup files
+# Backup and temp files
 *~
 *.bak
 
-# Ignore personal notes
+# Personal notes
 notes.md

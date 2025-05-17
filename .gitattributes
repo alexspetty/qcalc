@@ -1,0 +1,18 @@
+# Normalize all text files (LF in repo, CRLF on Windows)
+* text=auto
+
+# Explicit settings for source files
+*.c     text
+*.h     text
+*.sh    text eol=lf
+*.md    text
+
+# CMake and configuration files
+CMakeLists.txt text
+*.cmake         text
+
+# Explicitly mark binary types
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.zip   binary
