@@ -43,6 +43,7 @@ This framework suggests that numbers embody cosmic symmetries and mathematical s
   - **Negative Pole (6)**: Highlighted in bold black, indicating negative force attraction.
   - **Positive Forms (2, 4, 8)**: Shown in lighter red, denoting values drawn to positive influence.
   - **Negative Forms (1, 5, 7)**: Shown in dark grey, denoting values drawn to negative influence.
+- **Field Grid**: Shows the field calculations up to a given integer arranged as a 2D grid for quick visual reference.
 
 ## Usage
 
@@ -50,6 +51,7 @@ Example commands:
 - `qcalc help` - Displays a help message with available commands and their options.
 - `qcalc copyright` - Prints copyright information.
 - `qcalc field INTEGER [color]` - Displays the numeric field values up to a given integer; add 'color' to enable color coding.
+- `qcalc field-grid INTEGER [color]` - Display field calculations in a 2D grid; add 'color' to enable color coding.
 - `qcalc div INTEGER INTEGER` - Performs arbitrary precision division, identifying open, closed, and mixed cycle sequences.
 - `qcalc rec INTEGER` - Displays the arbitrary precision reciprocal representation of an integer.
 - `qcalc fc INTEGER` - Calculates and displays the foundational coordinates of an integer.

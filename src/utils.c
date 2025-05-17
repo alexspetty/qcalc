@@ -41,6 +41,7 @@ void print_help_message() {
     printf("  help                      Display this help message\n");
     printf("  copyright                 Display copyright information\n");
     printf("  field INTEGER [color]     Display numeric field values up to a given integer; add 'color' to enable color coding\n");
+    printf("  field-grid INTEGER [color] Display field calculations in a 2D grid; add 'color' to enable color coding\n");
     printf("  div INTEGER INTEGER       Perform division and identify repeating decimals\n");
     printf("  rec INTEGER               Display reciprocal representation\n");
     printf("  fc INTEGER                Display foundational coordinates of an integer\n");

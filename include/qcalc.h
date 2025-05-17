@@ -32,6 +32,7 @@ void print_number_with_color(int value);
 void print_field_str(const char *n_str, int debug_enabled); // Updated to include debug_enabled
 void print_field_str_color(const char *n_str, int debug_enabled); // Updated to include debug_enabled
 void print_field_str_no_color(const char *n_str, int debug_enabled); // Updated to include debug_enabled
+void print_field_grid(const char *n_str, int debug_enabled);
 
 // Reciprocal function
 void print_reciprocal_str(const char *str);

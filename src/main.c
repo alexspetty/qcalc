@@ -89,6 +89,16 @@ int main(int argc, char *argv[]) {
         return 0;
     }
 
+    // Handle "field-grid" command
+    if (strcmp(argv[1], "field-grid") == 0 && argc >= 3 && int_str(argv[2]) != 0) {
+        int debug_enabled = 0;
+        if (argc >= 4 && strcmp(argv[3], "color") == 0) {
+            color_enabled = 1;
+        }
+        print_field_grid(argv[2], debug_enabled);
+        return 0;
+    }
+
     // Handle "prime-debug" and "prime" commands
     if ((strcmp(argv[1], "prime") == 0 || strcmp(argv[1], "prime-debug") == 0) && argc >= 3 && int_str(argv[2]) != 0) {
         int detailed = 0;
