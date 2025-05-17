@@ -183,8 +183,17 @@ void mpz_div_print(mpz_t n, mpz_t d, int debug_enabled) {
 
 void print_div_str(const char *n_str, const char *d_str, int debug_enabled) {
     mpz_t n, d;
-    mpz_init_set_str(n, n_str, 10);
-    mpz_init_set_str(d, d_str, 10);
+    if (mpz_init_set_str(n, n_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", n_str);
+        mpz_clear(n);
+        return;
+    }
+    if (mpz_init_set_str(d, d_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", d_str);
+        mpz_clear(n);
+        mpz_clear(d);
+        return;
+    }
     mpz_div_print(n, d, debug_enabled);
     mpz_clear(n);
     mpz_clear(d);
@@ -192,7 +201,11 @@ void print_div_str(const char *n_str, const char *d_str, int debug_enabled) {
 
 void print_field_str(const char *n_str, int debug_enabled) {
     mpz_t n, i;
-    mpz_init_set_str(n, n_str, 10);
+    if (mpz_init_set_str(n, n_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", n_str);
+        mpz_clear(n);
+        return;
+    }
     mpz_init_set_ui(i, 1);
     while (mpz_cmp(i, n) != 0) {
         mpz_div_print(i, n, debug_enabled);
@@ -204,7 +217,11 @@ void print_field_str(const char *n_str, int debug_enabled) {
 
 void print_field_grid(const char *n_str, int debug_enabled) {
     mpz_t n, i;
-    mpz_init_set_str(n, n_str, 10);
+    if (mpz_init_set_str(n, n_str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", n_str);
+        mpz_clear(n);
+        return;
+    }
     mpz_init_set_ui(i, 1);
 
     int max_digits = 20; // Limit digits shown per cell

@@ -155,7 +155,11 @@ int prime_check(mpz_t n) {
 // Wrapper function for prime checks with optional foundational coordinates
 void print_prime_str(const char *str, int fc) {
     mpz_t n;
-    mpz_init_set_str(n, str, 10);
+    if (mpz_init_set_str(n, str, 10) != 0) {
+        fprintf(stderr, "ERROR: Invalid integer '%s'\n", str);
+        mpz_clear(n);
+        return;
+    }
     int result = prime_check(n);
     if (result) {
         printf("prime\n");
