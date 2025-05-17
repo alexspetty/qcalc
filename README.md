@@ -6,6 +6,51 @@
 
 ---
 
+## Installation
+
+### Linux (Ubuntu/Debian)
+
+```bash
+sudo apt-get install libgmp-dev
+git clone https://github.com/yourusername/qcalc.git
+cd qcalc
+mkdir build && cd build
+cmake ..
+cmake --build .
+./qcalc field 9 color
+```
+
+---
+
+### Windows (MSYS2 / MinGW64 / UCRT64)
+
+1. Install [MSYS2](https://www.msys2.org/)
+2. Open MSYS2 UCRT64 shell
+3. Install dependencies:
+
+```bash
+pacman -Syu
+pacman -S --needed \
+  mingw-w64-ucrt-x86_64-toolchain \
+  mingw-w64-ucrt-x86_64-cmake \
+  mingw-w64-ucrt-x86_64-gmp
+```
+
+4. Build the project:
+
+```bash
+git clone https://github.com/yourusername/qcalc.git
+cd qcalc
+mkdir build && cd build
+cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
+mingw32-make
+./qcalc field 9 color
+```
+
+> Output binary is `qcalc.exe`
+
+---
+
 ## Abstract
 
 qCalc explores numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. In my own process of inquiry, I first wondered if numbers could be direct representations of consciousness. As my thinking evolved, I came to see consciousness instead as something emergent from a quantum mechanical informational substrate, with numbers as its underpinning (akin to bits in binary systems).
@@ -186,51 +231,6 @@ qcalc help
 | `qcalc prime N [check-full]` | Check primality of N                              |
 | `qcalc prime-debug N`        | Verbose primality analysis                        |
 | `qcalc copyright`            | Show license and version                          |
-
----
-
-## Installation
-
-### Linux (Ubuntu/Debian)
-
-```bash
-sudo apt-get install libgmp-dev
-git clone https://github.com/yourusername/qcalc.git
-cd qcalc
-mkdir build && cd build
-cmake ..
-cmake --build .
-./qcalc field 9 color
-```
-
----
-
-### Windows (MSYS2 / MinGW64 / UCRT64)
-
-1. Install [MSYS2](https://www.msys2.org/)
-2. Open MSYS2 UCRT64 shell
-3. Install dependencies:
-
-```bash
-pacman -Syu
-pacman -S --needed \
-  mingw-w64-ucrt-x86_64-toolchain \
-  mingw-w64-ucrt-x86_64-cmake \
-  mingw-w64-ucrt-x86_64-gmp
-```
-
-4. Build the project:
-
-```bash
-git clone https://github.com/yourusername/qcalc.git
-cd qcalc
-mkdir build && cd build
-cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
-mingw32-make
-./qcalc field 9 color
-```
-
-> Output binary is `qcalc.exe`
 
 ---
 
