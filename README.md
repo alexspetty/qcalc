@@ -12,7 +12,7 @@
 
 ```bash
 sudo apt-get install libgmp-dev
-git clone https://github.com/yourusername/qcalc.git
+git clone https://github.com/alexspetty/qcalc.git
 cd qcalc
 mkdir build && cd build
 cmake ..
@@ -39,7 +39,7 @@ pacman -S --needed \
 4. Build the project:
 
 ```bash
-git clone https://github.com/yourusername/qcalc.git
+git clone https://github.com/alexspetty/qcalc.git
 cd qcalc
 mkdir build && cd build
 cmake -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=/ucrt64 ..
