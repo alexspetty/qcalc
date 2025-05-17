@@ -31,8 +31,8 @@ int reduce_to_single_digit(int sum) {
 
 void print_copyright_message()
 {
-    printf("\nqCalc [Version 2024.10.13.044]\n");
-    printf("(C) Copyright 1997-2024 Alexander S. Petty .:.\n\n");
+    printf("\nqCalc [Version 2025.05.17.044]\n");
+    printf("(C) Copyright 1997-2025 Alexander S. Petty .:.\n\n");
 }
 
 void print_help_message() {
