@@ -302,7 +302,3 @@ A. Petty .:.
 
 (C) 1997–2025 Alexander S. Petty
 qCalc is distributed under an open-source license. See `LICENSE` for details.
-
-```
-
----
