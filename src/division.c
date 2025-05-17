@@ -136,9 +136,15 @@ void mpz_div_print(mpz_t n, mpz_t d, int debug_enabled) {
     mpz_init(r);
     mpz_tdiv_qr(q, r, n, d);
 
-    // Print the quotient value
-    int q_value = mpz_get_ui(q);
-    print_number_with_color(q_value);
+    // Print the quotient value digit by digit so the color function
+    // receives each digit individually
+    char *q_str = mpz_get_str(NULL, 10, q);
+    if (q_str != NULL) {
+        for (size_t i = 0; q_str[i] != '\0'; i++) {
+            print_number_with_color(q_str[i] - '0');
+        }
+        free(q_str);
+    }
 
     mpz_clear(q);
     mpz_init_set_ui(zero, 0);
