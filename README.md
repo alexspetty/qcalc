@@ -158,15 +158,15 @@ cmake --build .
 
 ## From Speculation to Proof: An Invitation
 
-qCalc was born from intuition, observation, and synthesis, but its deepest claims remain, for now, speculative. I believe that moving from conceptual exploration to mathematical proof is both possible and necessary. Here are a few ways I see this work becoming provable—or at least testable:
+qCalc was born from intuition, observation, and synthesis, but its deepest claims remain, for now, speculative. I believe that moving from conceptual exploration to mathematical proof is both possible and necessary. Here are a few ways I see this work becoming provable (or at least testable):
 
-1. **Explicit Conjectures:** Each core assertion (for example, the redefinition of primality based on polarity neutrality) can be formalized as a mathematical conjecture. Such conjectures can then be tested against known results and computationally explored for counterexamples.
+1. Explicit Conjectures: Each core assertion (for example, the redefinition of primality based on polarity neutrality) can be formalized as a mathematical conjecture. Such conjectures can then be tested against known results and computationally explored for counterexamples.
 
-2. **Computational Experiments:** The codebase itself is designed for large-scale, automated testing. By generating and analyzing data (for example, checking qCalc's definition of primality across broad numeric ranges), patterns or anomalies can be identified and studied.
+2. Computational Experiments: The codebase itself is designed for large-scale, automated testing. By generating and analyzing data (for example, checking qCalc's definition of primality across broad numeric ranges), patterns or anomalies can be identified and studied.
 
-3. **Comparison with Established Theory:** By mapping the outputs and behaviors of qCalc to classical number theory, modular arithmetic, or even physical models, new relationships—or boundaries—may be uncovered.
+3. Comparison with Established Theory: By mapping the outputs and behaviors of qCalc to classical number theory, modular arithmetic, or even physical models, new relationships or boundaries may be uncovered.
 
-4. **Peer Collaboration:** I encourage mathematicians, physicists, and theorists to propose proofs, refutations, or refinements of any aspect of this framework. Even identifying a single counterexample to a conjecture would be a valuable contribution.
+4. Peer Collaboration: I encourage mathematicians, physicists, and theorists to propose proofs, refutations, or refinements of any aspect of this framework. Even identifying a single counterexample to a conjecture would be a valuable contribution.
 
 This section will be updated as new results, experiments, or theoretical advances emerge. qCalc is an experiment in both mathematics and scientific process, and I invite you to help move it from principled speculation toward proof.
 
