@@ -62,6 +62,11 @@ void check_full(mpz_t n) {
     mpz_init(half_n);
     mpz_fdiv_q_ui(half_n, n, 2);
 
+    char *n_str = NULL;
+    if (debug_enabled) {
+        n_str = mpz_get_str(NULL, 10, n);
+    }
+
     char *repeating_part = NULL;
     char *terminating_part = NULL;
     int is_prime = 1;  // Assume prime until proven otherwise
@@ -71,12 +76,12 @@ void check_full(mpz_t n) {
 
         char *i_str = mpz_get_str(NULL, 10, i);
         if (debug_enabled) {
-            printf("DEBUG: Checking fraction %s/%s\n", i_str, mpz_get_str(NULL, 10, n));
+            printf("DEBUG: Checking fraction %s/%s\n", i_str, n_str);
         }
 
         if (type == -1 || type == 0 || repeating_part == NULL) {
             if (debug_enabled) {
-                printf("DEBUG: Terminating or invalid cycle for %s/%s. Not considered prime based on this row.\n", i_str, mpz_get_str(NULL, 10, n));
+                printf("DEBUG: Terminating or invalid cycle for %s/%s. Not considered prime based on this row.\n", i_str, n_str);
             }
             free(repeating_part);
             free(terminating_part);
@@ -86,7 +91,7 @@ void check_full(mpz_t n) {
         }
 
         if (debug_enabled) {
-            printf("DEBUG: Repeating part of %s/%s: %s\n", i_str, mpz_get_str(NULL, 10, n), repeating_part);
+            printf("DEBUG: Repeating part of %s/%s: %s\n", i_str, n_str, repeating_part);
         }
 
         int sum = 0;
@@ -104,7 +109,7 @@ void check_full(mpz_t n) {
 
         if (reduced_sum != 9 && reduced_sum != 0) {
             if (debug_enabled) {
-                printf("DEBUG: Reduced sum is neither 9 nor 0 for %s/%s. Not a prime.\n", i_str, mpz_get_str(NULL, 10, n));
+                printf("DEBUG: Reduced sum is neither 9 nor 0 for %s/%s. Not a prime.\n", i_str, n_str);
             }
             is_prime = 0;
             free(i_str);
@@ -117,6 +122,10 @@ void check_full(mpz_t n) {
         free(repeating_part);
         free(terminating_part);
         mpz_add_ui(i, i, 1);  // Prepare for the next fraction
+    }
+
+    if (debug_enabled) {
+        free(n_str);
     }
 
     mpz_clear(i);
@@ -138,7 +147,9 @@ int prime_check(mpz_t n) {
     unsigned long remainder = mpz_fdiv_ui(n, 9);
     if (remainder == 0 || remainder == 3 || remainder == 6) {
         if (debug_enabled) {
-            printf("DEBUG: %s is on 3, 6, or 9 radial. Not a prime.\n", mpz_get_str(NULL, 10, n));
+            char *n_str = mpz_get_str(NULL, 10, n);
+            printf("DEBUG: %s is on 3, 6, or 9 radial. Not a prime.\n", n_str);
+            free(n_str);
         }
         return 0;
     }
