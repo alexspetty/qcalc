@@ -16,7 +16,7 @@ extern int debug_enabled;
 
 // Check functions for the primality conditions
 void check_first(mpz_t n);  // Check 1/n for primality
-void check_full(mpz_t n);   // Check from 1/n to ((n-1)/2)/n
+int check_full(mpz_t n);   // Check from 1/n to ((n-1)/2)/n
 
 // Utility functions
 int int_str(const char *str);
