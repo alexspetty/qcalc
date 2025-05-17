@@ -45,8 +45,8 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
     while (1) {
         mpz_init_set(history[history_size], n);
         history_size++;
-        history = (mpz_t *)realloc(history, sizeof(mpz_t) * (history_size + 1));
-        if (history == NULL) {
+        mpz_t *tmp_history = (mpz_t *)realloc(history, sizeof(mpz_t) * (history_size + 1));
+        if (tmp_history == NULL) {
             fprintf(stderr, "ERROR: History reallocation failed.\n");
             free(nr);
             free(rp);
@@ -58,6 +58,7 @@ int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d) {
             mpz_clear(zero);
             return -1; // Indicate error
         }
+        history = tmp_history;
 
         mpz_mul_ui(n, n, 10);
         mpz_tdiv_qr(q, n, n, d);
