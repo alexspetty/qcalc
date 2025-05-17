@@ -2,9 +2,7 @@
 
 ## Overview
 
-qCalc explores numeric polarity and primality within the framework of simulation theory. It proposes that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. While some readers may find echoes of Pythagorean or classical philosophical traditions in these ideas, the approach and direction of qCalc arose independently through personal investigation, only later revealing similarities to those ancient sources.
-
-This C-based command-line tool uses [GMP](https://gmplib.org/) for arbitrary-precision arithmetic and offers new ways to visualize numeric polarity, symmetry, and primality as foundational principles of computation.
+**qCalc** is a C-based command-line tool for exploring numeric polarity and primality through a new computational lens. Built on [GMP](https://gmplib.org/) for arbitrary-precision arithmetic, qCalc offers fresh ways to visualize numeric polarity, symmetry, and primality as foundational principles of computation. While some may notice resonances with ancient mathematical and philosophical traditions, qCalc arose independently through personal investigation.
 
 ---
 
