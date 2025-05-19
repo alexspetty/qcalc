@@ -249,6 +249,59 @@ qcalc help
 
 ---
 
+Thanks for catching that — here's the **fully corrected** `Sample qCalc Session` section in clean, **single-block Markdown**, ready to paste directly into your README file:
+
+---
+
+### Sample qCalc Session
+
+Here’s a brief example to show how qCalc’s ideas are applied in practice.
+
+### Check the Primality of 7
+
+```bash
+qcalc prime 7
+````
+
+**Output:**
+
+```
+Prime Status: TRUE
+Cycle: [1, 2, 4, 5, 7, 8]
+Cycle Sum (mod 9): 9
+Polarity: Neutral
+Structure: Closed Cycle
+```
+
+**Interpretation:**
+In classical number theory, 7 is prime because it’s indivisible. In qCalc, it's also prime, but for a deeper reason: its cycle is magnetically neutral, summing to 9, and exhibits no net polarity. It is isolated, symmetrical, and energetically self-contained.
+
+---
+
+### Explore the field of 19
+
+```bash
+qcalc rec 19
+```
+
+This command outputs the high-precision decimal expansion of 1/19 and shows repeating cycles, their symmetry, and polarity structure.
+
+**Interpretation:**
+Recurring decimals often reveal field-level symmetries. By examining these, qCalc helps identify latent order within numeric space — patterns that relate to polarity, resonance, and prime field behavior.
+
+---
+
+These examples are just starting points. Try:
+
+```bash
+qcalc field-grid 9 color
+qcalc fc 29
+```
+
+to visualize numeric flow and project values onto the polarity-based coordinate spiral.
+
+---
+
 ## Practical Applications
 
 * Cryptography and quantum-inspired key systems
