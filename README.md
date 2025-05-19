@@ -51,6 +51,20 @@ mingw32-make
 
 ---
 
+## Reading qCalc: A Primer
+
+qCalc is not just a numeric calculator, it's a lens for exploring the hidden structure of number, polarity, and symmetry. It was built to serve three kinds of users:
+
+1. **Pragmatic Tinkerers:** You can use qCalc as a high-precision tool to explore number fields, primes, and recurring decimals without engaging the underlying theory. Try commands like `qcalc field 9 color` or `qcalc rec 19` to see cycle structures in action.
+
+2. **Mathematical Explorers:** If you're curious about alternative definitions of primality, modular arithmetic, or new ways to visualize field behavior, qCalc offers a novel framework rooted in GMP-backed computation and base-9 cycle logic.
+
+3. **Philosophical and Symbolic Thinkers:** qCalc proposes that numbers are not merely quantities but symbolic actors in an informational universe. Concepts like numeric polarity, magnetic neutrality, and universal consideration sets invite deeper metaphysical reflection.
+
+This README moves between concrete tooling and speculative inquiry. Use what serves you and feel free to challenge, extend, or refine the ideas presented.
+
+---
+
 ## Abstract
 
 qCalc explores numeric polarity within the framework of simulation theory, proposing that numbers may act as fundamental computational elements in a quantum substrate that shapes our perceived reality. In my own process of inquiry, I first wondered if numbers could be direct representations of consciousness. As my thinking evolved, I came to see consciousness instead as something emergent from a quantum mechanical informational substrate, with numbers as its underpinning (akin to bits in binary systems).
@@ -162,6 +176,7 @@ In qCalc, primality is redefined according to the structural and energetic natur
 - These numbers are governed by polarity but do not impart it
 - They are part of the observable world of creation and physical phenomena
 - Examples include 4, 8, 10, and higher multiples that follow doubling or halving patterns
+- Prime numbers are form numbers which are imbued with neutrality, or "nine-ness"
 
 ---
 
@@ -258,10 +273,6 @@ qcalc help
 * DNA and physical analogies are conceptual, not empirical
 * The new prime model is unverified relative to classical number theory
 
-### What Remains to Be Proven
-
-See the next section for paths toward testing and formalization.
-
 ---
 
 ## From Speculation to Proof: An Invitation
@@ -272,6 +283,39 @@ qCalc was born from intuition, observation, and synthesis. Its deepest claims re
 2. Experiments: Use qCalc to automate tests across large ranges
 3. Comparison: Map outputs against classical number theory and modular forms
 4. Collaboration: Invite mathematicians and physicists to test, refute, or expand the model
+
+---
+
+## Core Analogies and Cautions
+
+Throughout this project, you’ll encounter analogies to magnetism, DNA, polarity, and consciousness. These are **not** intended as literal scientific claims, but as conceptual metaphors that help describe numeric structure in richer ways.
+
+For example:
+- Polarity maps echo **DNA base pairings** (e.g., mirrored digit pairings like 1 ↔ 8).
+- Expansion and contraction patterns echo the **golden ratio** in **harmonic systems**.
+- Field reversals are likened to **magnetic phase boundaries** or **circuit logic gates**.
+
+These metaphors are used because they provoke insight — not because they imply empirical proof. qCalc is both a computational tool and a symbolic exploration. Its ultimate goal is to test whether meaningfully structured number behavior might hint at deeper patterns in the architecture of reality.
+
+If you prefer hard math, stick to the field and cycle commands. If you enjoy symbol, resonance, and system metaphors, go further.
+
+---
+
+## Glossary of Terms
+
+The following terms are used throughout qCalc to express both technical and conceptual ideas. Some are speculative or symbolic in nature.
+
+| Term | Definition |
+|------|------------|
+| **Polarity** | An energetic or symbolic attribute of a digit, assigned via mirrored pairings (e.g., 1 ↔ 8) to reflect expansion/contraction or positive/negative behavior. |
+| **Neutrality** | A state in which a number or number field expresses no net polarity; this is the basis for qCalc’s primality model. |
+| **Field** | A modular structure derived from a number’s behavior under division, especially mod-9. Fields expose repeating cycles and symmetrical structures. |
+| **Uₙ (Universal Consideration Set)** | The complete polarity-aware field space defined by an integer `n`, including all of its cycles, mirrors, and relationships. |
+| **Closed Cycle** | A cycle that returns to its origin without external leakage or polarity distortion. Closed cycles represent structural coherence. |
+| **Magnetically Inert** | A quality of numbers that exhibit no directional polarity; these are candidates for qCalc’s prime classification. |
+| **Expansion / Contraction** | Abstract forces modeled after the golden ratio and its inverse, representing the directional flows in polarity structures. |
+| **Phase Boundary** | A symbolic or functional “hinge” point where polarity reverses or transforms, typically modeled at 0 or 9. |
+| **Prime Field** | A number whose field is magnetically neutral, closed-cycle, and structurally self-contained under qCalc’s alternative primality rules. |
 
 ---
 
