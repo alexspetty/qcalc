@@ -295,7 +295,7 @@ For example:
 - Expansion and contraction patterns echo the **golden ratio** in **harmonic systems**.
 - Field reversals are likened to **magnetic phase boundaries** or **circuit logic gates**.
 
-These metaphors are used because they provoke insight — not because they imply empirical proof. qCalc is both a computational tool and a symbolic exploration. Its ultimate goal is to test whether meaningfully structured number behavior might hint at deeper patterns in the architecture of reality.
+These metaphors are used because they provoke insight not because they imply empirical proof. qCalc is both a computational tool and a symbolic exploration. Its ultimate goal is to test whether meaningfully structured number behavior might hint at deeper patterns in the architecture of reality.
 
 If you prefer hard math, stick to the field and cycle commands. If you enjoy symbol, resonance, and system metaphors, go further.
 
