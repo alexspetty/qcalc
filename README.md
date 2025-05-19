@@ -142,6 +142,69 @@ These forces are reflected in how digit polarity flows across fields, affecting 
 
 ---
 
+## New Definition of Primality
+
+In qCalc, primality is redefined according to the structural and energetic nature of number fields, rather than divisibility alone. Numbers are categorized into three primary types:
+
+### 1. Structural Numbers (Primordial Numbers)
+
+- These include 1, 2, and 5
+- They are not considered prime under this model
+- They form the foundational scaffolding of the conscious field
+- 1 represents subject, 2 represents duality, and 5 arises automatically from the presence of 2
+
+### 2. Polar Numbers (Closed Cycle Fields)
+
+- These numbers exhibit polarity; they are either positive, negative, or neutral
+- Polarity is established when Unity falls into Plurality
+- Polar numbers have closed internal cycles and shepherd the world of form
+- Examples include 3 (positive), 6 (negative), and 9 (neutral)
+
+### 3. Form Numbers (Open Cycle Fields)
+
+- These numbers are governed by polarity but do not impart it
+- They are part of the observable world of creation and physical phenomena
+- Examples include 4, 8, 10, and higher multiples that follow doubling or halving patterns
+- Prime numbers are form numbers which are imbued with neutrality, or "nine-ness"
+
+---
+
+### Foundational Criteria for Primality
+
+A number is considered prime in qCalc only when:
+
+- Its entire field exhibits a closed-cycle internal structure
+- Each cycle within the field sums to 9 (mod 9), signifying magnetic neutrality
+- The number does not exhibit a net positive or negative polarity
+- It is magnetically inert and unable to geometrically integrate with other fields
+
+---
+
+### Summary of Primality Conditions
+
+1. **Structural Numbers are Excluded:**  
+   1, 2, and 5 are foundational, not prime. They generate the field, but are not part of polarity-neutral structures.
+
+2. **Polarity Check:**  
+   - 3 is excluded; it is a positively polarized archetype  
+   - 6 is excluded; it is negatively polarized  
+   - 9 is neutral, but functions as a phase boundary, not a prime field
+
+3. **Magnetic Neutrality:**  
+   - 7 is the first true prime field  
+   - Prime fields are symmetrical, magnetically neutral, and closed-cycle  
+   - They often produce decimal expansions whose digits reduce to 9 or 0
+
+---
+
+### Implications
+
+- Classical indivisibility is a side effect of neutrality; not the cause
+- Primes are magnetically inert; they cannot form composite geometries without violating field symmetry
+- Their atomic nature arises from structural isolation, not arithmetic
+
+---
+
 ## Who It's For
 
 * **Developers** exploring numerical patterns or high-precision decimal behavior
@@ -177,7 +240,7 @@ If you're here to explore these ideas further, continue reading in [`THEORY.md`]
 ## FAQ
 
 **Is this just numerology or pseudoscience?**
-No. The code is rigorous and based on GMP. The metaphors — polarity, symmetry, neutrality — are speculative, but grounded in observable numeric behavior.
+No. The code is rigorous and based on GMP. The metaphors (polarity, symmetry, neutrality) are speculative, but grounded in observable numeric behavior.
 
 **Why redefine "prime"?**
 To explore whether structural properties of decimal expansions can reveal new insights into numeric identity. It's a supplemental model, not a replacement.
@@ -189,7 +252,7 @@ To explore whether structural properties of decimal expansions can reveal new in
 * Offering a symbolic language for number theory
 
 **Does qCalc try to "prove" anything?**
-Not in the classical sense. It's an experimental lens and framework — a way to see structure others may have missed.
+Not in the classical sense. It's an experimental lens and framework, a way to see structure others may have missed.
 
 ---
 
