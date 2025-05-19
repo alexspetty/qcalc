@@ -2,7 +2,7 @@
 
 echo "Starting qCalc test suite..."
 
-# Optional: specify qcalc binary via command line or QCALC_BIN env var
+# If you wish, specify qcalc binary via command line or QCALC_BIN env var
 #   QCALC_BIN=/custom/path/qcalc ./test_qcalc.sh
 #   ./test_qcalc.sh /custom/path/qcalc
 

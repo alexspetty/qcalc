@@ -17,7 +17,7 @@ CMakeCache.txt
 Makefile
 cmake_install.cmake
 
-# Binary executable (name may vary by platform)
+# Binary executable
 qCalc
 qcalc.exe
 

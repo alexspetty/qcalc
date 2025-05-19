@@ -26,12 +26,12 @@ void print_help_message();
 
 // Division-related functions
 int mpz_pfraction_str(char **a, char **p, mpz_t n, mpz_t d);
-void mpz_div_print(mpz_t n, mpz_t d, int debug_enabled); // Updated to include debug_enabled
-void print_div_str(const char *n_str, const char *d_str, int debug_enabled); // Updated to include debug_enabled
+void mpz_div_print(mpz_t n, mpz_t d, int debug_enabled);
+void print_div_str(const char *n_str, const char *d_str, int debug_enabled);
 void print_number_with_color(int value);
-void print_field_str(const char *n_str, int debug_enabled); // Updated to include debug_enabled
-void print_field_str_color(const char *n_str, int debug_enabled); // Updated to include debug_enabled
-void print_field_str_no_color(const char *n_str, int debug_enabled); // Updated to include debug_enabled
+void print_field_str(const char *n_str, int debug_enabled);
+void print_field_str_color(const char *n_str, int debug_enabled);
+void print_field_str_no_color(const char *n_str, int debug_enabled);
 void print_field_grid(const char *n_str, int debug_enabled);
 
 // Reciprocal function
