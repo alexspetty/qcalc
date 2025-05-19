@@ -372,19 +372,15 @@ The following terms are used throughout qCalc to express both technical and conc
 
 ---
 
-Great — here's a **positioning statement** and a **compact FAQ** you can drop into your README, website, or even a conference talk to help frame *qCalc* for skeptics and newcomers alike.
-
----
-
-## 🧭 Positioning Statement: What is qCalc?
+## Positioning Statement: What is qCalc?
 
 **qCalc is a computational exploration of number structure, symmetry, and polarity.**
 
 At its surface, it's a precision command-line tool for exploring recurring decimals, numeric fields, and primality using GMP-backed arbitrary-precision math.
 
-At its depth, it’s a philosophical proposal: that number itself may encode not just quantity, but relational structure — expressing concepts like polarity, neutrality, and resonance.
+At its depth, it’s a philosophical proposal: that number itself may encode not just quantity, but relational structure, expressing concepts like polarity, neutrality, and resonance.
 
-qCalc doesn’t seek to replace classical number theory. Instead, it offers an alternative lens — speculative, poetic, and computational — through which to explore the patterns that emerge when numbers interact in modulated fields.
+qCalc doesn’t seek to replace classical number theory. Instead, it offers an alternative lens (speculative, poetic, and computational) through which to explore the patterns that emerge when numbers interact in modulated fields.
 
 It is both a tool **and** a question.
 
