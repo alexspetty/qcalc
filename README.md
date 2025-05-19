@@ -372,6 +372,58 @@ The following terms are used throughout qCalc to express both technical and conc
 
 ---
 
+Great — here's a **positioning statement** and a **compact FAQ** you can drop into your README, website, or even a conference talk to help frame *qCalc* for skeptics and newcomers alike.
+
+---
+
+## 🧭 Positioning Statement: What is qCalc?
+
+**qCalc is a computational exploration of number structure, symmetry, and polarity.**
+
+At its surface, it's a precision command-line tool for exploring recurring decimals, numeric fields, and primality using GMP-backed arbitrary-precision math.
+
+At its depth, it’s a philosophical proposal: that number itself may encode not just quantity, but relational structure — expressing concepts like polarity, neutrality, and resonance.
+
+qCalc doesn’t seek to replace classical number theory. Instead, it offers an alternative lens — speculative, poetic, and computational — through which to explore the patterns that emerge when numbers interact in modulated fields.
+
+It is both a tool **and** a question.
+
+---
+
+## FAQ
+
+### **Is this just numerology or pseudoscience?**
+
+No. While qCalc embraces metaphor and symbolism, its computations are rigorous, verifiable, and built on GMP. It’s not astrology dressed in C code, it’s a working numeric tool that explores new territory with clear rules and structured outputs.
+
+### **Why redefine “prime”?**
+
+In classical math, “prime” means indivisible. In qCalc, “prime” is redefined to mean *magnetically neutral, structurally isolated*, and *symmetrically inert* within a decimal field. It's not meant to replace traditional primes, it's meant to **reveal new properties** in number behavior through this lens.
+
+### **Is this scientific?**
+
+Parts of it are. The code, the cycle detection, and the visualization are scientific. The metaphors like polarity, fields, and neutrality are speculative analogies. qCalc is *not claiming* to model physical magnetism or DNA structure directly. It invites exploration, not dogma.
+
+### **What is the real utility of qCalc?**
+
+* Detecting and visualizing repeating decimal structures
+* Teaching number theory concepts (fields, mod 9 behavior, cycles)
+* Offering a symbolic framework for pattern exploration
+* Serving as a computational base for further experimentation (e.g., in cryptography, simulation, or art)
+
+### **Who is this for?**
+
+* Developers and mathematicians curious about alternative number systems
+* Educators who want to visually demonstrate mod-9 cycle behavior
+* Philosophers of math and symbolic thinkers
+* Creators seeking numeric inspiration for art, music, or narrative structure
+
+### **Does qCalc try to “prove” anything?**
+
+Not in the traditional mathematical sense. It’s a **framework** for pattern exploration, not a theorem prover. But it offers a testable structure for examining conjectures around numeric resonance, field behavior, and symbolic neutrality.
+
+---
+
 ## Note on Originality and Historical Context
 
 The ideas in qCalc emerged through personal exploration. Only later did they reveal parallels to older frameworks such as Pythagorean, classical, and Daoist mathematics. While these echoes are real, the system and code were developed independently. This work stands as an original synthesis and ongoing invitation to collaborative inquiry.
